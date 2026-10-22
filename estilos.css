@@ -1,0 +1,917 @@
+/* Variables globales de color, tipografía y espaciado */
+:root {
+  --colorFondoBlanco: #FFFFFF;
+  --colorFondoTenue: #F8FAFC;
+  --colorFondoAlterno: #F1F5F9;
+  --colorTextoPrincipal: #1E293B;
+  --colorTextoSecundario: #475569;
+  --colorTextoSuave: #64748B;
+  --colorAcentoAzul: #2563EB;
+  --colorAcentoAzulHover: #1D4ED8;
+  --colorAcentoAzulSuave: #EFF6FF;
+  --colorVerdeEsmeralda: #059669;
+  --colorVerdeSuave: #ECFDF5;
+  --colorError: #DC2626;
+  --colorBorde: #E2E8F0;
+  --colorBordeFuerte: #CBD5E1;
+  --sombraLigera: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --sombraMedia: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --radioBordeSuave: 6px;
+  --radioBordeMedio: 8px;
+  --fuentePrincipal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --anchoMaximo: 1160px;
+}
+
+/* Reinicio básico y configuración general del documento */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  background-color: var(--colorFondoBlanco);
+  color: var(--colorTextoPrincipal);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Contenedor central y utilidades de botones */
+.contenedorPrincipal {
+  width: 100%;
+  max-width: var(--anchoMaximo);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.botonPrimario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorAcentoAzul);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radioBordeSuave);
+  border: 1px solid var(--colorAcentoAzul);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.botonPrimario:hover {
+  background-color: var(--colorAcentoAzulHover);
+  border-color: var(--colorAcentoAzulHover);
+}
+
+.botonPrimario:active {
+  transform: translateY(1px);
+}
+
+.botonSecundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorFondoBlanco);
+  color: var(--colorTextoPrincipal);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radioBordeSuave);
+  border: 1px solid var(--colorBordeFuerte);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.botonSecundario:hover {
+  background-color: var(--colorFondoTenue);
+  border-color: var(--colorTextoSuave);
+}
+
+.botonAnchoCompleto {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+}
+
+/* Encabezado fijo y navegación principal */
+.encabezadoSitio {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--colorBorde);
+}
+
+.barraNavegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.marcaLogotipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--colorTextoPrincipal);
+  letter-spacing: -0.02em;
+}
+
+.iconoLogotipo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: var(--colorAcentoAzul);
+  color: #FFFFFF;
+  border-radius: var(--radioBordeSuave);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.navegacionPrincipal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.listaEnlacesNavegacion {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.enlaceNavegacion {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--colorTextoSecundario);
+  transition: color 0.15s ease;
+}
+
+.enlaceNavegacion:hover,
+.enlaceNavegacion.enlaceActivo {
+  color: var(--colorAcentoAzul);
+}
+
+.botonCotizarMenu {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.9rem;
+}
+
+.botonHamburguesa {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeSuave);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lineaHamburguesa {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--colorTextoPrincipal);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Sección Hero y maqueta de infraestructura */
+.seccionHero {
+  padding: 5rem 0 5.5rem;
+  background-color: var(--colorFondoTenue);
+  border-bottom: 1px solid var(--colorBorde);
+}
+
+.cuadriculaHero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.etiquetaSuperior {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--colorAcentoAzul);
+  background-color: var(--colorAcentoAzulSuave);
+  border: 1px solid #DBEAFE;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radioBordeSuave);
+  margin-bottom: 1.25rem;
+}
+
+.tituloPrincipal {
+  font-size: 2.65rem;
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--colorTextoPrincipal);
+  margin-bottom: 1.25rem;
+}
+
+.descripcionHero {
+  font-size: 1.08rem;
+  color: var(--colorTextoSecundario);
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.grupoBotonesHero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2.5rem;
+}
+
+.metricasConfianza {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--colorBorde);
+}
+
+.itemMetrica {
+  display: flex;
+  flex-direction: column;
+}
+
+.valorMetrica {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--colorTextoPrincipal);
+}
+
+.etiquetaMetrica {
+  font-size: 0.84rem;
+  color: var(--colorTextoSuave);
+}
+
+.separadorMetrica {
+  width: 1px;
+  height: 32px;
+  background-color: var(--colorBorde);
+}
+
+/* Maqueta visual derecha en Hero */
+.panelOperativo {
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeMedio);
+  box-shadow: var(--sombraMedia);
+  overflow: hidden;
+}
+
+.cabeceraPanel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background-color: var(--colorFondoAlterno);
+  border-bottom: 1px solid var(--colorBorde);
+}
+
+.puntosVentana {
+  display: flex;
+  gap: 6px;
+}
+
+.puntoControl {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--colorBordeFuerte);
+}
+
+.tituloVentana {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--colorTextoSecundario);
+}
+
+.estadoOperativo {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--colorVerdeEsmeralda);
+  background-color: var(--colorVerdeSuave);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radioBordeSuave);
+}
+
+.cuerpoPanel {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.filaEstadoServicio {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1rem;
+  background-color: var(--colorFondoTenue);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeSuave);
+}
+
+.iconoEstado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radioBordeSuave);
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBorde);
+  color: var(--colorAcentoAzul);
+  flex-shrink: 0;
+}
+
+.detalleEstado {
+  flex: 1;
+  min-width: 0;
+}
+
+.nombreModulo {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--colorTextoPrincipal);
+}
+
+.subtituloModulo {
+  font-size: 0.78rem;
+  color: var(--colorTextoSuave);
+}
+
+.insigniaEstado {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radioBordeSuave);
+  white-space: nowrap;
+}
+
+.insigniaExito {
+  color: var(--colorVerdeEsmeralda);
+  background-color: var(--colorVerdeSuave);
+}
+
+.insigniaAzul {
+  color: var(--colorAcentoAzul);
+  background-color: var(--colorAcentoAzulSuave);
+}
+
+.resumenInferiorPanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.bloqueMiniMetrica {
+  padding: 0.85rem 1rem;
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeSuave);
+}
+
+.etiquetaMini {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--colorTextoSuave);
+  margin-bottom: 0.2rem;
+}
+
+.valorMini {
+  font-size: 0.9rem;
+  color: var(--colorTextoPrincipal);
+}
+
+/* Encabezados comunes de sección */
+.encabezadoSeccion {
+  max-width: 680px;
+  margin-bottom: 3rem;
+}
+
+.subtituloSeccion {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--colorAcentoAzul);
+  margin-bottom: 0.5rem;
+}
+
+.tituloSeccion {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--colorTextoPrincipal);
+  margin-bottom: 0.85rem;
+}
+
+.descripcionSeccion {
+  font-size: 1.02rem;
+  color: var(--colorTextoSecundario);
+}
+
+/* Sección de Servicios y tarjetas modulares */
+.seccionServicios {
+  padding: 5.5rem 0;
+  background-color: var(--colorFondoBlanco);
+}
+
+.cuadriculaServicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.tarjetaServicio {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeMedio);
+  padding: 1.85rem;
+  box-shadow: var(--sombraLigera);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjetaServicio:hover {
+  border-color: var(--colorBordeFuerte);
+  box-shadow: var(--sombraMedia);
+}
+
+.iconoServicio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radioBordeSuave);
+  background-color: var(--colorAcentoAzulSuave);
+  color: var(--colorAcentoAzul);
+  margin-bottom: 1.25rem;
+}
+
+.tituloTarjetaServicio {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--colorTextoPrincipal);
+  margin-bottom: 0.65rem;
+}
+
+.textoTarjetaServicio {
+  font-size: 0.94rem;
+  color: var(--colorTextoSecundario);
+  margin-bottom: 1.25rem;
+}
+
+.listaPuntosServicio {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--colorBorde);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.listaPuntosServicio li {
+  font-size: 0.86rem;
+  color: var(--colorTextoSecundario);
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.listaPuntosServicio li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--colorAcentoAzul);
+}
+
+.enlaceCotizarServicio {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--colorAcentoAzul);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.enlaceCotizarServicio:hover {
+  color: var(--colorAcentoAzulHover);
+  text-decoration: underline;
+}
+
+/* Sección Por qué elegirnos (Nosotros) */
+.seccionNosotros {
+  padding: 5.5rem 0;
+  background-color: var(--colorFondoTenue);
+  border-top: 1px solid var(--colorBorde);
+  border-bottom: 1px solid var(--colorBorde);
+}
+
+.introduccionNosotros {
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.textoNosotros {
+  font-size: 1.02rem;
+  color: var(--colorTextoSecundario);
+}
+
+.cuadriculaVentajas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.tarjetaVentaja {
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeMedio);
+  padding: 1.85rem;
+  box-shadow: var(--sombraLigera);
+}
+
+.numeroVentaja {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--colorAcentoAzul);
+  background-color: var(--colorAcentoAzulSuave);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radioBordeSuave);
+  margin-bottom: 1rem;
+}
+
+.tituloVentaja {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--colorTextoPrincipal);
+  margin-bottom: 0.6rem;
+}
+
+.descripcionVentaja {
+  font-size: 0.94rem;
+  color: var(--colorTextoSecundario);
+}
+
+/* Sección de Contacto y Cotización */
+.seccionContacto {
+  padding: 5.5rem 0;
+  background-color: var(--colorFondoBlanco);
+}
+
+.cuadriculaContacto {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.descripcionContacto {
+  font-size: 1rem;
+  color: var(--colorTextoSecundario);
+  margin-bottom: 2rem;
+}
+
+.listaDatosDirectos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--colorBorde);
+}
+
+.itemDatoContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.etiquetaDato {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--colorTextoSuave);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.valorDato {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--colorTextoPrincipal);
+}
+
+a.valorDato:hover {
+  color: var(--colorAcentoAzul);
+}
+
+.contenedorFormulario {
+  background-color: var(--colorFondoTenue);
+  border: 1px solid var(--colorBorde);
+  border-radius: var(--radioBordeMedio);
+  padding: 2.25rem;
+  box-shadow: var(--sombraLigera);
+}
+
+.formularioCotizacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.filaCamposDoble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+
+.grupoCampo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.etiquetaCampo {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--colorTextoPrincipal);
+}
+
+.marcaRequerido {
+  color: var(--colorAcentoAzul);
+}
+
+.entradaFormulario {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  background-color: var(--colorFondoBlanco);
+  border: 1px solid var(--colorBordeFuerte);
+  border-radius: var(--radioBordeSuave);
+  color: var(--colorTextoPrincipal);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.entradaFormulario::placeholder {
+  color: #94A3B8;
+}
+
+.entradaFormulario:focus {
+  outline: none;
+  border-color: var(--colorAcentoAzul);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.entradaFormulario.campoConError {
+  border-color: var(--colorError);
+}
+
+.areaTextoFormulario {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.mensajeErrorCampo {
+  font-size: 0.8rem;
+  color: var(--colorError);
+  min-height: 1rem;
+  display: none;
+}
+
+.mensajeErrorCampo.errorVisible {
+  display: block;
+}
+
+.alertaExito {
+  margin-top: 0.5rem;
+  padding: 1rem 1.15rem;
+  background-color: var(--colorVerdeSuave);
+  border: 1px solid #A7F3D0;
+  border-radius: var(--radioBordeSuave);
+  color: #065F46;
+}
+
+.encabezadoAlertaExito {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.cuerpoAlertaExito {
+  font-size: 0.88rem;
+  color: #047857;
+}
+
+/* Pie de página (Footer) */
+.piePagina {
+  background-color: var(--colorFondoTenue);
+  border-top: 1px solid var(--colorBorde);
+  padding-top: 4rem;
+}
+
+.contenidoPiePagina {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.marcaLogotipoPie {
+  margin-bottom: 0.9rem;
+}
+
+.descripcionPie {
+  font-size: 0.92rem;
+  color: var(--colorTextoSecundario);
+  max-width: 320px;
+}
+
+.tituloColumnaPie {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--colorTextoPrincipal);
+  margin-bottom: 1rem;
+}
+
+.listaPie {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: var(--colorTextoSecundario);
+}
+
+.enlacePie:hover {
+  color: var(--colorAcentoAzul);
+}
+
+.barraDerechosAutor {
+  padding: 1.5rem 1.5rem;
+  border-top: 1px solid var(--colorBorde);
+  font-size: 0.86rem;
+  color: var(--colorTextoSuave);
+  text-align: center;
+}
+
+/* Adaptación responsiva para tablets y pantallas medianas */
+@media (max-width: 992px) {
+  .cuadriculaHero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .tituloPrincipal {
+    font-size: 2.25rem;
+  }
+
+  .cuadriculaServicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cuadriculaVentajas {
+    grid-template-columns: 1fr;
+  }
+
+  .cuadriculaContacto {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contenidoPiePagina {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Adaptación responsiva para dispositivos móviles */
+@media (max-width: 768px) {
+  .botonHamburguesa {
+    display: flex;
+  }
+
+  .navegacionPrincipal {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background-color: var(--colorFondoBlanco);
+    border-bottom: 1px solid var(--colorBorde);
+    box-shadow: var(--sombraMedia);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.25rem 1.5rem;
+    gap: 1.25rem;
+    display: none;
+  }
+
+  .navegacionPrincipal.menuAbierto {
+    display: flex;
+  }
+
+  .listaEnlacesNavegacion {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .enlaceNavegacion {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+
+  .botonCotizarMenu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .seccionHero {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .tituloPrincipal {
+    font-size: 1.9rem;
+  }
+
+  .separadorMetrica {
+    display: none;
+  }
+
+  .cuadriculaServicios {
+    grid-template-columns: 1fr;
+  }
+
+  .filaCamposDoble {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedorFormulario {
+    padding: 1.5rem;
+  }
+
+  .resumenInferiorPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .contenidoPiePagina {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
