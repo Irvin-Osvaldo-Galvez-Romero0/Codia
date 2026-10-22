@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Codia - Soluciones tecnológicas integrales para empresas y particulares: desarrollo web y software, cámaras de seguridad CCTV, soporte técnico, redes y consultoría IT.">
-  <title>Codia | Soluciones Tecnológicas y Servicios IT</title>
+  <meta name="description" content="Codia - Desarrollo de software a la medida, puntos de venta, landing pages, dashboards, CRM, soluciones con Inteligencia Artificial y seguridad para tu negocio.">
+  <title>Codia | Software a la Medida, Puntos de Venta, CRM, IA y Seguridad</title>
+  
+  <!-- Tipografía moderna Google Fonts: Plus Jakarta Sans e Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-  <!-- Encabezado principal y barra de navegación fija -->
+  <!-- Barra de navegación fija con diseño moderno en blanco y verde esmeralda -->
   <header id="encabezadoPrincipal" class="encabezadoSitio">
     <div class="contenedorPrincipal barraNavegacion">
       <a href="#inicio" class="marcaLogotipo" aria-label="Codia - Ir al inicio">
-        <span class="iconoLogotipo" aria-hidden="true">C</span>
-        <span class="textoLogotipo">Codia</span>
+        <div class="iconoLogotipo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <div class="bloqueMarcaTexto">
+          <span class="textoLogotipo">Codia</span>
+          <span class="subtextoLogotipo">Tech &amp; IA Solutions</span>
+        </div>
       </a>
 
       <button
@@ -36,115 +47,232 @@
       <nav id="menuNavegacion" class="navegacionPrincipal" aria-label="Navegación principal">
         <ul class="listaEnlacesNavegacion">
           <li><a href="#inicio" class="enlaceNavegacion">Inicio</a></li>
-          <li><a href="#servicios" class="enlaceNavegacion">Servicios</a></li>
-          <li><a href="#nosotros" class="enlaceNavegacion">Nosotros</a></li>
+          <li><a href="#soluciones" class="enlaceNavegacion">Lo que Desarrollamos</a></li>
+          <li><a href="#demo" class="enlaceNavegacion">Demostración</a></li>
+          <li><a href="#por-que-codia" class="enlaceNavegacion">Ventajas</a></li>
+          <li><a href="#preguntas" class="enlaceNavegacion">Preguntas</a></li>
           <li><a href="#contacto" class="enlaceNavegacion">Contacto</a></li>
         </ul>
-        <a href="#contacto" class="botonPrimario botonCotizarMenu">Cotizar</a>
+        <div class="accionesMenu">
+          <a href="#contacto" class="botonPrimario botonCotizarMenu">
+            <span>Cotizar Proyecto</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Sección principal (Hero) con propuesta de valor y resumen operativo -->
+    <!-- SECCIÓN HERO: Propuesta de valor clara, moderna y visual -->
     <section id="inicio" class="seccionHero">
+      <div class="fondoDecorativoHero" aria-hidden="true">
+        <div class="orbeLuz orbeVerde"></div>
+        <div class="orbeLuz orbeMenta"></div>
+      </div>
+
       <div class="contenedorPrincipal cuadriculaHero">
         <div class="contenidoHero">
-          <span class="etiquetaSuperior">Servicios tecnológicos integrales</span>
-          <h1 class="tituloPrincipal">
-            Tecnología confiable que resuelve problemas reales en tu negocio y hogar
-          </h1>
-          <p class="descripcionHero">
-            En <strong>Codia</strong> integramos desarrollo de software, infraestructura de redes, videovigilancia CCTV y mantenimiento de equipos bajo un mismo equipo técnico. Sin intermediarios y con atención directa.
-          </p>
-          <div class="grupoBotonesHero">
-            <a href="#contacto" class="botonPrimario">Solicitar cotización</a>
-            <a href="#servicios" class="botonSecundario">Explorar servicios</a>
+          <div class="insigniaHero">
+            <span class="puntoPulso"></span>
+            <span>Software a la Medida · Inteligencia Artificial · Seguridad</span>
           </div>
+
+          <h1 class="tituloPrincipal">
+            Creamos el <span class="resaltadoVerde">Punto de Venta, CRM o Sistema con IA</span> que tu negocio necesita
+          </h1>
+
+          <p class="descripcionHero">
+            Desarrollamos tecnología <strong>100% fácil de usar y a tu medida</strong>: desde landing pages que atraen clientes y dashboards para controlar tus ventas, hasta asistentes de Inteligencia Artificial y sistemas de seguridad. Sin tecnicismos raros ni complicaciones.
+          </p>
+
+          <div class="grupoBotonesHero">
+            <a href="#contacto" class="botonPrimario botonGrande">
+              <span>Cuéntanos tu idea</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#soluciones" class="botonSecundario botonGrande">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span>Ver soluciones</span>
+            </a>
+          </div>
+
           <div class="metricasConfianza">
             <div class="itemMetrica">
               <span class="valorMetrica">100%</span>
-              <span class="etiquetaMetrica">Garantía por escrito</span>
+              <span class="etiquetaMetrica">A la medida de tu negocio</span>
             </div>
             <div class="separadorMetrica" aria-hidden="true"></div>
             <div class="itemMetrica">
-              <span class="valorMetrica">Soporte local</span>
-              <span class="etiquetaMetrica">Atención en sitio y remota</span>
+              <span class="valorMetrica">Fácil</span>
+              <span class="etiquetaMetrica">Sin tecnicismos complicados</span>
             </div>
             <div class="separadorMetrica" aria-hidden="true"></div>
             <div class="itemMetrica">
-              <span class="valorMetrica">5 áreas</span>
-              <span class="etiquetaMetrica">Cobertura IT completa</span>
+              <span class="valorMetrica">Directo</span>
+              <span class="etiquetaMetrica">Soporte y garantía real</span>
             </div>
           </div>
         </div>
 
-        <!-- Maqueta visual limpia que ilustra el panel de trabajo e infraestructura -->
-        <div class="contenedorMaquetaHero" aria-hidden="true">
+        <!-- Maqueta visual interactiva de la interfaz de Codia -->
+        <div class="contenedorMaquetaHero" id="demo">
           <div class="panelOperativo">
             <div class="cabeceraPanel">
               <div class="puntosVentana">
-                <span class="puntoControl"></span>
-                <span class="puntoControl"></span>
-                <span class="puntoControl"></span>
+                <span class="puntoControl puntoRojo"></span>
+                <span class="puntoControl puntoAmarillo"></span>
+                <span class="puntoControl puntoVerde"></span>
               </div>
-              <span class="tituloVentana">Panel de Diagnóstico y Servicios — Codia IT</span>
-              <span class="estadoOperativo">Activo</span>
+              <div class="pestanasPanel" role="tablist" aria-label="Demostración de sistemas">
+                <button type="button" class="pestanaPanel activa" role="tab" aria-selected="true" data-tab="pos" id="tab-pos">
+                  Punto de Venta
+                </button>
+                <button type="button" class="pestanaPanel" role="tab" aria-selected="false" data-tab="dashboard" id="tab-dashboard">
+                  Dashboard &amp; CRM
+                </button>
+                <button type="button" class="pestanaPanel" role="tab" aria-selected="false" data-tab="ia" id="tab-ia">
+                  Asistente IA
+                </button>
+              </div>
+              <span class="insigniaEnVivo">En vivo</span>
             </div>
 
             <div class="cuerpoPanel">
-              <div class="filaEstadoServicio">
-                <div class="iconoEstado">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
-                  </svg>
+              <!-- Vista 1: Punto de Venta (POS) -->
+              <div class="contenidoPestana visible" id="vista-pos" role="tabpanel" aria-labelledby="tab-pos">
+                <div class="barraEstadoPOS">
+                  <div>
+                    <span class="textoAtenuado">Caja #1 · Sucursal Centro</span>
+                    <h4 class="nombreVistaPanel">Terminal Punto de Venta (POS)</h4>
+                  </div>
+                  <span class="badgeVerde">Sistema conectado</span>
                 </div>
-                <div class="detalleEstado">
-                  <p class="nombreModulo">Sistema de Gestión y Portal Web</p>
-                  <p class="subtituloModulo">Despliegue en producción · Respuesta 42 ms</p>
+
+                <div class="cuadriculaMiniPOS">
+                  <div class="tarjetaMiniPOS">
+                    <span class="etiquetaMiniPOS">Ventas de hoy</span>
+                    <strong class="montoMiniPOS">$18,450 MXN</strong>
+                    <span class="detallePositivo">▲ 24% vs ayer</span>
+                  </div>
+                  <div class="tarjetaMiniPOS">
+                    <span class="etiquetaMiniPOS">Tickets cobrados</span>
+                    <strong class="montoMiniPOS">42 compras</strong>
+                    <span class="detallePositivo">Tiempo prom. 18 seg</span>
+                  </div>
                 </div>
-                <span class="insigniaEstado insigniaExito">Operativo</span>
+
+                <div class="listaItemsDemo">
+                  <div class="filaItemDemo">
+                    <span class="iconoItemDemo">📦</span>
+                    <div class="infoItemDemo">
+                      <strong>Lector de códigos y ticket instantáneo</strong>
+                      <small>Cobros con tarjeta, transferencia o efectivo</small>
+                    </div>
+                    <span class="tagDemo tagListo">Listo para usar</span>
+                  </div>
+                  <div class="filaItemDemo">
+                    <span class="iconoItemDemo">📊</span>
+                    <div class="infoItemDemo">
+                      <strong>Control de inventario automático</strong>
+                      <small>Aviso cuando un producto se está terminando</small>
+                    </div>
+                    <span class="tagDemo tagListo">En tiempo real</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="filaEstadoServicio">
-                <div class="iconoEstado">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
-                    <circle cx="12" cy="13" r="3"></circle>
-                  </svg>
+              <!-- Vista 2: Dashboard & CRM -->
+              <div class="contenidoPestana" id="vista-dashboard" role="tabpanel" aria-labelledby="tab-dashboard" hidden>
+                <div class="barraEstadoPOS">
+                  <div>
+                    <span class="textoAtenuado">Panel Central Administrativo</span>
+                    <h4 class="nombreVistaPanel">Control de Clientes &amp; Ventas (CRM)</h4>
+                  </div>
+                  <span class="badgeVerde">Datos sincronizados</span>
                 </div>
-                <div class="detalleEstado">
-                  <p class="nombreModulo">Circuito Cerrado CCTV (8 Cámaras IP)</p>
-                  <p class="subtituloModulo">Grabación continua NVR · Acceso móvil activo</p>
+
+                <div class="cuadriculaMiniPOS">
+                  <div class="tarjetaMiniPOS">
+                    <span class="etiquetaMiniPOS">Clientes activos</span>
+                    <strong class="montoMiniPOS">128 clientes</strong>
+                    <span class="detallePositivo">14 prospectos nuevos</span>
+                  </div>
+                  <div class="tarjetaMiniPOS">
+                    <span class="etiquetaMiniPOS">Cotizaciones enviadas</span>
+                    <strong class="montoMiniPOS">35 este mes</strong>
+                    <span class="detallePositivo">68% tasa de cierre</span>
+                  </div>
                 </div>
-                <span class="insigniaEstado insigniaExito">Monitoreando</span>
+
+                <div class="listaItemsDemo">
+                  <div class="filaItemDemo">
+                    <span class="iconoItemDemo">👥</span>
+                    <div class="infoItemDemo">
+                      <strong>Historial y seguimiento de cada cliente</strong>
+                      <small>Teléfono, notas, cotizaciones y pagos al día</small>
+                    </div>
+                    <span class="tagDemo tagListo">Organizado</span>
+                  </div>
+                  <div class="filaItemDemo">
+                    <span class="iconoItemDemo">📈</span>
+                    <div class="infoItemDemo">
+                      <strong>Reportes automáticos en Excel y PDF</strong>
+                      <small>Toma decisiones con números claros de tu negocio</small>
+                    </div>
+                    <span class="tagDemo tagListo">1-Clic</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="filaEstadoServicio">
-                <div class="iconoEstado">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                  </svg>
+              <!-- Vista 3: Asistente con Inteligencia Artificial -->
+              <div class="contenidoPestana" id="vista-ia" role="tabpanel" aria-labelledby="tab-ia" hidden>
+                <div class="barraEstadoPOS">
+                  <div>
+                    <span class="textoAtenuado">Automatización 24/7</span>
+                    <h4 class="nombreVistaPanel">Agente de IA para WhatsApp &amp; Web</h4>
+                  </div>
+                  <span class="badgeVerde">IA activa 24/7</span>
                 </div>
-                <div class="detalleEstado">
-                  <p class="nombreModulo">Red Empresarial y Cableado Cat 6</p>
-                  <p class="subtituloModulo">Switch principal + 4 puntos de acceso Wi-Fi</p>
+
+                <div class="burbujasChatDemo">
+                  <div class="mensajeChat mensajeCliente">
+                    <span class="autorChat">Cliente en WhatsApp:</span>
+                    <p>Hola, ¿tienen disponibilidad para mañana y qué precio tiene?</p>
+                  </div>
+                  <div class="mensajeChat mensajeIA">
+                    <div class="cabeceraMensajeIA">
+                      <span class="iconoIABadge">✨</span>
+                      <span class="autorChat">Tu Asistente con IA:</span>
+                    </div>
+                    <p>¡Hola! Sí tenemos disponibilidad mañana a las 11:00 AM o 4:00 PM. El costo es de $850 y puedo apartar tu lugar en este momento, ¿te agendo a las 11:00?</p>
+                  </div>
                 </div>
-                <span class="insigniaEstado insigniaAzul">Estable</span>
+
+                <div class="pieIADemo">
+                  <span class="iconoVerdeCheck">✓</span>
+                  <span>Responde dudas, cotiza y agenda citas sin que tú tengas que estar pegado al teléfono.</span>
+                </div>
               </div>
 
+              <!-- Barra inferior común de la maqueta -->
               <div class="resumenInferiorPanel">
                 <div class="bloqueMiniMetrica">
-                  <span class="etiquetaMini">Mantenimiento preventivo</span>
-                  <strong class="valorMini">14 equipos optimizados</strong>
+                  <span class="etiquetaMini">Adaptable a:</span>
+                  <strong class="valorMini">Celular, Tablet y Computadora</strong>
                 </div>
                 <div class="bloqueMiniMetrica">
-                  <span class="etiquetaMini">Tiempo de respuesta</span>
-                  <strong class="valorMini">&lt; 2 horas en sitio</strong>
+                  <span class="etiquetaMini">Diseño:</span>
+                  <strong class="valorMini">Intuitivo y 100% en español</strong>
                 </div>
               </div>
             </div>
@@ -153,210 +281,450 @@
       </div>
     </section>
 
-    <!-- Sección de Servicios ofrecidos por Codia -->
-    <section id="servicios" class="seccionServicios">
+    <!-- SECCIÓN DE SOLUCIONES EXPLICADAS EN LENGUAJE AMIGABLE -->
+    <section id="soluciones" class="seccionServicios">
       <div class="contenedorPrincipal">
         <div class="encabezadoSeccion">
-          <span class="subtituloSeccion">Catálogo de soluciones</span>
-          <h2 class="tituloSeccion">Servicios diseñados para cubrir cada necesidad tecnológica</h2>
+          <span class="subtituloSeccion">Desarrollo y Tecnología Sin Enredos</span>
+          <h2 class="tituloSeccion">¿Qué podemos crear para hacer crecer tu negocio?</h2>
           <p class="descripcionSeccion">
-            Desde el desarrollo de una plataforma a medida hasta el cableado de tu oficina o la reparación de tus equipos de trabajo.
+            No necesitas saber de programación. Cuéntanos qué problema quieres resolver o qué te gustaría automatizar y nosotros lo construimos a tu medida.
           </p>
         </div>
 
         <div id="listaServicios" class="cuadriculaServicios">
-          <!-- 1. Desarrollo de Software y Web -->
+          
+          <!-- 1. PUNTOS DE VENTA (POS) -->
           <article class="tarjetaServicio">
-            <div class="iconoServicio" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-                <line x1="8" y1="7" x2="8.01" y2="7"></line>
-                <line x1="12" y1="7" x2="12.01" y2="7"></line>
-              </svg>
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="etiquetaPopular">Muy pedido</span>
             </div>
-            <h3 class="tituloTarjetaServicio">Desarrollo de Software y Web</h3>
+            <h3 class="tituloTarjetaServicio">Puntos de Venta (POS)</h3>
             <p class="textoTarjetaServicio">
-              Páginas web corporativas, aplicaciones a la medida y sistemas de gestión interna pensados para agilizar tus operaciones y ventas.
+              Un sistema rápido para cobrar en tu mostrador, tienda o negocio. Olvídate de hacer cuentas en papel o tener fugas de dinero.
             </p>
             <ul class="listaPuntosServicio">
-              <li>Sitios web rápidos y adaptables a móviles</li>
-              <li>Sistemas de inventario, ventas y control interno</li>
-              <li>Paneles administrativos fáciles de usar</li>
+              <li><strong>Cobro ágil:</strong> compatible con lector de códigos de barras e impresoras de tickets.</li>
+              <li><strong>Control de caja:</strong> corte diario, entradas de dinero, salidas y ganancias.</li>
+              <li><strong>Inventario en tiempo real:</strong> sabe exactamente qué productos te quedan.</li>
             </ul>
-            <button type="button" class="enlaceCotizarServicio" data-servicio="Desarrollo de Software y Web">
-              Cotizar este servicio &rarr;
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Punto de Venta (POS)">
+              <span>Cotizar Punto de Venta</span>
+              <span aria-hidden="true">&rarr;</span>
             </button>
           </article>
 
-          <!-- 2. Seguridad y CCTV -->
+          <!-- 2. LANDING PAGES Y SITIOS WEB -->
           <article class="tarjetaServicio">
-            <div class="iconoServicio" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path>
-                <polygon points="23 7 16 12 23 17 23 7"></polygon>
-              </svg>
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Atracción</span>
             </div>
-            <h3 class="tituloTarjetaServicio">Seguridad y CCTV</h3>
+            <h3 class="tituloTarjetaServicio">Landing Pages y Páginas Web</h3>
             <p class="textoTarjetaServicio">
-              Instalación, configuración y monitoreo de cámaras de seguridad para proteger tu empresa, local comercial o residencia las 24 horas.
+              Páginas diseñadas con un solo objetivo: <strong>atraer personas interesadas y convertirlas en clientes</strong> que te escriban directo a WhatsApp.
             </p>
             <ul class="listaPuntosServicio">
-              <li>Cámaras IP y analógicas de alta definición</li>
-              <li>Visualización en tiempo real desde celular o PC</li>
-              <li>Respaldo en grabadores DVR/NVR y mantenimiento</li>
+              <li><strong>Ultra rápidas:</strong> abren al instante en cualquier teléfono o computadora.</li>
+              <li><strong>Botón directo a WhatsApp:</strong> para recibir mensajes de clientes sin fricción.</li>
+              <li><strong>Diseño profesional:</strong> genera confianza inmediata en quien te busca.</li>
             </ul>
-            <button type="button" class="enlaceCotizarServicio" data-servicio="Seguridad y CCTV">
-              Cotizar este servicio &rarr;
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Landing Pages y Páginas Web">
+              <span>Cotizar Landing Page</span>
+              <span aria-hidden="true">&rarr;</span>
             </button>
           </article>
 
-          <!-- 3. Soporte y Mantenimiento -->
+          <!-- 3. DASHBOARDS Y PANELES DE CONTROL -->
           <article class="tarjetaServicio">
-            <div class="iconoServicio" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-              </svg>
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18"></path>
+                  <path d="M18 17V9"></path>
+                  <path d="M13 17V5"></path>
+                  <path d="M8 17v-3"></path>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Métricas</span>
             </div>
-            <h3 class="tituloTarjetaServicio">Soporte y Mantenimiento</h3>
+            <h3 class="tituloTarjetaServicio">Dashboards y Paneles de Control</h3>
             <p class="textoTarjetaServicio">
-              Reparación física, limpieza interna y optimización de computadoras de escritorio y laptops para extender su vida útil y rendimiento.
+              Un panel visual con gráficas claras para ver la salud de tu negocio en una sola pantalla: cuánto vendes, qué gastas y qué producto rinde más.
             </p>
             <ul class="listaPuntosServicio">
-              <li>Cambio de pasta térmica y limpieza profunda</li>
-              <li>Actualización a discos SSD y memoria RAM</li>
-              <li>Formateo, respaldo de datos y eliminación de virus</li>
+              <li><strong>Gráficas fáciles de entender:</strong> adiós a hojas de Excel confusas y desordenadas.</li>
+              <li><strong>Acceso protegido:</strong> cada empleado o socio ve solo lo que tú autorices.</li>
+              <li><strong>Descarga de reportes:</strong> exporta a Excel o PDF con un solo clic.</li>
+            </ul>
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Dashboards y Paneles">
+              <span>Cotizar Dashboard</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </article>
+
+          <!-- 4. CRM A LA MEDIDA -->
+          <article class="tarjetaServicio">
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <span class="etiquetaPopular">Para Vender Más</span>
+            </div>
+            <h3 class="tituloTarjetaServicio">CRM a la Medida (Control de Clientes)</h3>
+            <p class="textoTarjetaServicio">
+              Nunca más pierdas una venta por olvidar dar seguimiento. Organiza tus prospectos, mensajes, llamadas y cotizaciones en un solo lugar.
+            </p>
+            <ul class="listaPuntosServicio">
+              <li><strong>Embudo de ventas:</strong> mira en qué paso va cada cliente (interesado, cotizado, pagado).</li>
+              <li><strong>Recordatorios de cobranza y citas:</strong> no dejes pasar pagos pendientes.</li>
+              <li><strong>Adaptado a tu proceso:</strong> se ajusta a cómo vendes tú, no al revés.</li>
+            </ul>
+            <button type="button" class="enlaceCotizarServicio" data-servicio="CRM a la Medida">
+              <span>Cotizar CRM a la Medida</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </article>
+
+          <!-- 5. INTELIGENCIA ARTIFICIAL (IA) -->
+          <article class="tarjetaServicio tarjetaDestacadaIA">
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio iconoIAEspecial" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <span class="etiquetaIA">Tecnología Inteligente</span>
+            </div>
+            <h3 class="tituloTarjetaServicio">Desarrollos con Inteligencia Artificial</h3>
+            <p class="textoTarjetaServicio">
+              Pon la IA a trabajar en tu negocio para responder clientes las 24 horas, automatizar tareas repetitivas y ahorrar decenas de horas de trabajo a la semana.
+            </p>
+            <ul class="listaPuntosServicio">
+              <li><strong>Asistente inteligente en WhatsApp:</strong> atiende dudas y toma pedidos mientras duermes.</li>
+              <li><strong>Automatización de tareas:</strong> clasificación de correos, facturas o mensajes.</li>
+              <li><strong>Análisis inteligente:</strong> resúmenes y recomendaciones basadas en tus ventas.</li>
+            </ul>
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Desarrollos con Inteligencia Artificial">
+              <span>Cotizar Solución con IA</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </article>
+
+          <!-- 6. SOFTWARE Y SISTEMAS 100% A LA MEDIDA -->
+          <article class="tarjetaServicio">
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Sin Límites</span>
+            </div>
+            <h3 class="tituloTarjetaServicio">Sistemas 100% a la Medida</h3>
+            <p class="textoTarjetaServicio">
+              ¿Tienes una forma única de trabajar? Creamos el sistema exactamente con los botones, funciones y pantallas que tú necesitas, sin pagar mensualidades absurdas.
+            </p>
+            <ul class="listaPuntosServicio">
+              <li><strong>Hecho para tu negocio:</strong> no tienes que adaptarte tú al programa.</li>
+              <li><strong>Tú eres el dueño:</strong> tu base de datos y sistema son completamente tuyos.</li>
+              <li><strong>Escalable:</strong> agrega nuevas funciones conforme tu empresa crezca.</li>
+            </ul>
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Software 100% a la Medida">
+              <span>Cotizar Sistema a la Medida</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </article>
+
+          <!-- 7. SEGURIDAD Y CÁMARAS (EXPLICADO SIMPLE, SIN TECNICISMOS COMO CCTV) -->
+          <article class="tarjetaServicio">
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Tranquilidad</span>
+            </div>
+            <h3 class="tituloTarjetaServicio">Seguridad y Cámaras de Vigilancia</h3>
+            <p class="textoTarjetaServicio">
+              Protege tu negocio, almacén o casa. Instalamos cámaras para que <strong>puedas ver todo en vivo desde tu celular en cualquier momento</strong> con imagen nítida.
+            </p>
+            <ul class="listaPuntosServicio">
+              <li><strong>Monitoreo en tu celular:</strong> mira lo que pasa en tiempo real estés donde estés.</li>
+              <li><strong>Grabación continua:</strong> guarda videos de días o semanas para aclarar cualquier incidente.</li>
+              <li><strong>Instalación limpia y estética:</strong> cables ocultos y equipos resistentes.</li>
+            </ul>
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Seguridad y Cámaras">
+              <span>Cotizar Cámaras de Seguridad</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </article>
+
+          <!-- 8. MANTENIMIENTO Y SOPORTE DE COMPUTADORAS -->
+          <article class="tarjetaServicio">
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Rendimiento</span>
+            </div>
+            <h3 class="tituloTarjetaServicio">Soporte y Mantenimiento de Computadoras</h3>
+            <p class="textoTarjetaServicio">
+              ¿Tus computadoras o laptops están lentas o se calientan? Las dejamos como nuevas para que tu equipo trabaje rápido y sin trabas.
+            </p>
+            <ul class="listaPuntosServicio">
+              <li><strong>Aceleración de equipos:</strong> cambio a discos rápidos SSD y aumento de memoria.</li>
+              <li><strong>Limpieza interna profunda:</strong> cambio de pasta térmica para evitar que se quemen.</li>
+              <li><strong>Limpieza de virus y respaldo:</strong> protege tus fotos, archivos y cuentas.</li>
             </ul>
             <button type="button" class="enlaceCotizarServicio" data-servicio="Soporte y Mantenimiento">
-              Cotizar este servicio &rarr;
+              <span>Cotizar Mantenimiento</span>
+              <span aria-hidden="true">&rarr;</span>
             </button>
           </article>
 
-          <!-- 4. Redes e Infraestructura -->
+          <!-- 9. REDES E INTERNET SIN FALLAS -->
           <article class="tarjetaServicio">
-            <div class="iconoServicio" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                <line x1="12" y1="20" x2="12.01" y2="20"></line>
-              </svg>
+            <div class="cabeceraTarjetaServicio">
+              <div class="iconoServicio" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                  <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                </svg>
+              </div>
+              <span class="etiquetaVerde">Conexión</span>
             </div>
-            <h3 class="tituloTarjetaServicio">Redes e Infraestructura</h3>
+            <h3 class="tituloTarjetaServicio">Redes e Internet Rápido</h3>
             <p class="textoTarjetaServicio">
-              Cableado estructurado, organización de racks, configuración de routers, switches y redes Wi-Fi empresariales sin zonas muertas.
+              Elimina los rincones sin señal de Wi-Fi y las caídas de internet en tu oficina, local o taller con una red estable y bien organizada.
             </p>
             <ul class="listaPuntosServicio">
-              <li>Tendido y certificación de puntos de red voz y datos</li>
-              <li>Configuración de redes Wi-Fi de alto tráfico</li>
-              <li>Segmentación de red y solución de fallas de conexión</li>
+              <li><strong>Wi-Fi potente en todo el lugar:</strong> sin cortes cuando muchos se conectan.</li>
+              <li><strong>Cables de red ordenados:</strong> conexión directa y veloz para tus cajas o PCs.</li>
+              <li><strong>Red para clientes y red privada:</strong> protege los datos de tu negocio.</li>
             </ul>
-            <button type="button" class="enlaceCotizarServicio" data-servicio="Redes e Infraestructura">
-              Cotizar este servicio &rarr;
+            <button type="button" class="enlaceCotizarServicio" data-servicio="Redes e Internet">
+              <span>Cotizar Redes e Internet</span>
+              <span aria-hidden="true">&rarr;</span>
             </button>
           </article>
 
-          <!-- 5. Automatización y Consultoría IT -->
-          <article class="tarjetaServicio">
-            <div class="iconoServicio" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-              </svg>
-            </div>
-            <h3 class="tituloTarjetaServicio">Automatización y Consultoría IT</h3>
-            <p class="textoTarjetaServicio">
-              Diagnóstico tecnológico y digitalización de procesos para reducir tareas manuales repetitivas y elegir las herramientas adecuadas.
-            </p>
-            <ul class="listaPuntosServicio">
-              <li>Auditoría de equipos y procesos actuales</li>
-              <li>Integración de herramientas y flujos de trabajo</li>
-              <li>Asesoría en compra de equipamiento tecnológico</li>
-            </ul>
-            <button type="button" class="enlaceCotizarServicio" data-servicio="Automatización y Consultoría IT">
-              Cotizar este servicio &rarr;
-            </button>
-          </article>
         </div>
       </div>
     </section>
 
-    <!-- Sección Nosotros / Por qué elegirnos -->
-    <section id="nosotros" class="seccionNosotros">
+    <!-- SECCIÓN INTERACTIVA: ¿CÓMO TRABAJAMOS? (PASO A PASO SENCILLO) -->
+    <section id="por-que-codia" class="seccionNosotros">
       <div class="contenedorPrincipal">
-        <div class="bloqueNosotros">
-          <div class="introduccionNosotros">
-            <span class="subtituloSeccion">Por qué elegirnos</span>
-            <h2 class="tituloSeccion">Un aliado técnico cercano, claro y responsable</h2>
-            <p class="textoNosotros">
-              Sabemos lo frustrante que es tratar con proveedores que hablan con tecnicismos innecesarios o desaparecen después de entregar un trabajo. En <strong>Codia</strong> trabajamos con diagnósticos honestos, presupuestos transparentes y seguimiento real.
+        <div class="encabezadoSeccion">
+          <span class="subtituloSeccion">Sin sorpresas ni palabras confusas</span>
+          <h2 class="tituloSeccion">Así convertimos tu necesidad en una solución lista para usar</h2>
+          <p class="descripcionSeccion">
+            Desde la primera llamada te hablamos claro: precios justos, tiempos de entrega reales y acompañamiento en todo momento.
+          </p>
+        </div>
+
+        <div class="cuadriculaPasos">
+          <div class="tarjetaPaso">
+            <div class="numeroPaso">01</div>
+            <div class="iconoPaso">💬</div>
+            <h3 class="tituloPaso">1. Nos platicas tu idea</h3>
+            <p class="descripcionPaso">
+              Nos cuentas qué hace tu negocio, qué problema tienes o qué te gustaría automatizar. Te escuchamos y te sugerimos la opción más práctica y económica.
             </p>
           </div>
 
-          <div class="cuadriculaVentajas">
-            <div class="tarjetaVentaja">
-              <div class="numeroVentaja">01</div>
-              <h3 class="tituloVentaja">Atención personalizada</h3>
-              <p class="descripcionVentaja">
-                Escuchamos tu necesidad real antes de proponer una solución. Te explicamos cada opción con claridad para que inviertas solo en lo que necesitas.
-              </p>
-            </div>
-
-            <div class="tarjetaVentaja">
-              <div class="numeroVentaja">02</div>
-              <h3 class="tituloVentaja">Soporte local y directo</h3>
-              <p class="descripcionVentaja">
-                Acudimos directamente a tu negocio o domicilio para instalaciones y revisiones físicas, además de brindarte asistencia remota inmediata.
-              </p>
-            </div>
-
-            <div class="tarjetaVentaja">
-              <div class="numeroVentaja">03</div>
-              <h3 class="tituloVentaja">Garantía en cada trabajo</h3>
-              <p class="descripcionVentaja">
-                Todos nuestros desarrollos, instalaciones de red, cámaras y reparaciones cuentan con garantía y respaldo post-entrega.
-              </p>
-            </div>
+          <div class="tarjetaPaso">
+            <div class="numeroPaso">02</div>
+            <div class="iconoPaso">📋</div>
+            <h3 class="tituloPaso">2. Propuesta clara y sin compromiso</h3>
+            <p class="descripcionPaso">
+              Te entregamos un presupuesto detallado donde sabes exactamente qué incluye, cuánto cuesta y en cuántos días estará listo.
+            </p>
           </div>
+
+          <div class="tarjetaPaso">
+            <div class="numeroPaso">03</div>
+            <div class="iconoPaso">⚡</div>
+            <h3 class="tituloPaso">3. Desarrollo y pruebas contigo</h3>
+            <p class="descripcionPaso">
+              Construimos tu sistema o instalamos tus equipos. Te mostramos avances para que veas cómo va quedando y apruebes cada detalle.
+            </p>
+          </div>
+
+          <div class="tarjetaPaso">
+            <div class="numeroPaso">04</div>
+            <div class="iconoPaso">🚀</div>
+            <h3 class="tituloPaso">4. Puesta en marcha y soporte</h3>
+            <p class="descripcionPaso">
+              Te enseñamos a usarlo a ti y a tu personal con paciencia. Y si después tienes dudas o necesitas cambios, cuentas con nosotros.
+            </p>
+          </div>
+        </div>
+
+        <div class="cajaDestacadaConfianza">
+          <div class="iconoCajaConfianza">🤝</div>
+          <div class="textoCajaConfianza">
+            <h4>¿Tienes dudas sobre qué opción te conviene más?</h4>
+            <p>Escríbenos directamente por WhatsApp. Te asesoramos sin costo para decirte si necesitas un Punto de Venta sencillo, una Landing Page o automatizar con IA.</p>
+          </div>
+          <a href="https://wa.me/525512345678?text=Hola,%20quisiera%20asesor%C3%ADa%20para%20un%20proyecto%20con%20Codia" target="_blank" rel="noopener noreferrer" class="botonPrimario">
+            <span>Hablar por WhatsApp</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Sección de Formulario de Contacto y Cotización -->
+    <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ ACORDEÓN) -->
+    <section id="preguntas" class="seccionPreguntas">
+      <div class="contenedorPrincipal">
+        <div class="encabezadoSeccion">
+          <span class="subtituloSeccion">Resolvemos tus dudas</span>
+          <h2 class="tituloSeccion">Preguntas que suelen hacernos</h2>
+          <p class="descripcionSeccion">
+            Respuestas sencillas y directas a las dudas más comunes de nuestros clientes.
+          </p>
+        </div>
+
+        <div class="acordeonPreguntas" id="acordeonFAQ">
+          
+          <div class="itemAcordeon abierto">
+            <button type="button" class="botonPregunta" aria-expanded="true">
+              <span class="textoPregunta">¿Puedo pedir solo un Punto de Venta o una Landing Page sin contratar todo lo demás?</span>
+              <span class="iconoAcordeon" aria-hidden="true">+</span>
+            </button>
+            <div class="respuestaAcordeon">
+              <p>¡Totalmente! Cada servicio es independiente. Puedes pedir únicamente una Landing Page para comenzar a captar clientes, o únicamente un Punto de Venta para tu mostrador. Solo pagas por lo que tú necesitas.</p>
+            </div>
+          </div>
+
+          <div class="itemAcordeon">
+            <button type="button" class="botonPregunta" aria-expanded="false">
+              <span class="textoPregunta">¿Cómo puede la Inteligencia Artificial (IA) ayudar a un negocio pequeño o mediano?</span>
+              <span class="iconoAcordeon" aria-hidden="true">+</span>
+            </button>
+            <div class="respuestaAcordeon">
+              <p>La IA puede atender a tus clientes por WhatsApp a cualquier hora contestando preguntas frecuentes, cotizando al momento e incluso agendando citas, para que no pierdas ventas cuando estés ocupado o fuera de horario laboral.</p>
+            </div>
+          </div>
+
+          <div class="itemAcordeon">
+            <button type="button" class="botonPregunta" aria-expanded="false">
+              <span class="textoPregunta">¿Cómo funciona el servicio de seguridad y cámaras? ¿Tengo que saber algo técnico?</span>
+              <span class="iconoAcordeon" aria-hidden="true">+</span>
+            </button>
+            <div class="respuestaAcordeon">
+              <p>Para nada. Nosotros nos encargamos de todo el montaje, la conexión y de instalarte una aplicación muy sencilla en tu celular (iPhone o Android) para que con un solo toque veas tus cámaras en vivo desde donde estés.</p>
+            </div>
+          </div>
+
+          <div class="itemAcordeon">
+            <button type="button" class="botonPregunta" aria-expanded="false">
+              <span class="textoPregunta">¿Qué pasa si mi negocio crece y necesito más funciones en el futuro?</span>
+              <span class="iconoAcordeon" aria-hidden="true">+</span>
+            </button>
+            <div class="respuestaAcordeon">
+              <p>Al ser desarrollos a la medida, el sistema puede crecer al ritmo de tu empresa. Si en 6 meses quieres agregar sucursales, facturación electrónica o un módulo nuevo, se le añade fácilmente.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y COTIZACIÓN -->
     <section id="contacto" class="seccionContacto">
       <div class="contenedorPrincipal cuadriculaContacto">
         <div class="informacionContacto">
-          <span class="subtituloSeccion">Contacto y cotizaciones</span>
-          <h2 class="tituloSeccion">Cuéntanos qué necesitas resolver</h2>
+          <span class="subtituloSeccion">Contacto directo</span>
+          <h2 class="tituloSeccion">Cuéntanos tu proyecto y recibe una propuesta</h2>
           <p class="descripcionContacto">
-            Completa el formulario y un especialista de nuestro equipo se pondrá en contacto contigo a la brevedad con una propuesta clara y sin compromiso.
+            Llena los datos a continuación y nos pondremos en contacto contigo hoy mismo por WhatsApp o correo con una estimación clara.
           </p>
 
-          <div class="listaDatosDirectos">
-            <div class="itemDatoContacto">
-              <span class="etiquetaDato">Teléfono / WhatsApp</span>
-              <a href="tel:+525512345678" class="valorDato">+52 (55) 1234 5678</a>
+          <div class="tarjetaContactoVerde">
+            <div class="filaContactoDirecto">
+              <div class="circuloIconoVerde">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="etiquetaDato">WhatsApp y Llamadas</span>
+                <a href="tel:+525512345678" class="valorDato">+52 (55) 1234 5678</a>
+              </div>
             </div>
-            <div class="itemDatoContacto">
-              <span class="etiquetaDato">Correo electrónico</span>
-              <a href="mailto:contacto@codia.mx" class="valorDato">contacto@codia.mx</a>
+
+            <div class="filaContactoDirecto">
+              <div class="circuloIconoVerde">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="etiquetaDato">Correo Electrónico</span>
+                <a href="mailto:contacto@codia.mx" class="valorDato">contacto@codia.mx</a>
+              </div>
             </div>
-            <div class="itemDatoContacto">
-              <span class="etiquetaDato">Horario de atención</span>
-              <span class="valorDato">Lunes a Sábado · 9:00 a 19:00 hrs</span>
+
+            <div class="filaContactoDirecto">
+              <div class="circuloIconoVerde">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="etiquetaDato">Horario de Atención</span>
+                <span class="valorDato">Lunes a Sábado · 9:00 a 19:00 hrs</span>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- FORMULARIO DE COTIZACIÓN -->
         <div class="contenedorFormulario">
           <form id="formularioContacto" class="formularioCotizacion" novalidate>
+            <div class="cabeceraFormulario">
+              <h3 class="tituloCajaForm">Solicitud de Cotización</h3>
+              <p class="subtituloCajaForm">Respuesta promedio en menos de 2 horas</p>
+            </div>
+
             <div class="grupoCampo">
-              <label for="campoNombre" class="etiquetaCampo">Nombre completo <span class="marcaRequerido">*</span></label>
+              <label for="campoNombre" class="etiquetaCampo">Tu nombre o el de tu negocio <span class="marcaRequerido">*</span></label>
               <input
                 type="text"
                 id="campoNombre"
                 name="nombreCliente"
                 class="entradaFormulario"
-                placeholder="Ej. Carlos Mendoza"
+                placeholder="Ej. Juan Pérez / Abarrotes San Juan"
                 autocomplete="name"
                 required
               >
@@ -365,7 +733,7 @@
 
             <div class="filaCamposDoble">
               <div class="grupoCampo">
-                <label for="campoTelefono" class="etiquetaCampo">Teléfono / WhatsApp <span class="marcaRequerido">*</span></label>
+                <label for="campoTelefono" class="etiquetaCampo">Teléfono o WhatsApp <span class="marcaRequerido">*</span></label>
                 <input
                   type="tel"
                   id="campoTelefono"
@@ -385,7 +753,7 @@
                   id="campoCorreo"
                   name="correoCliente"
                   class="entradaFormulario"
-                  placeholder="ejemplo@empresa.com"
+                  placeholder="ejemplo@correo.com"
                   autocomplete="email"
                   required
                 >
@@ -394,46 +762,57 @@
             </div>
 
             <div class="grupoCampo">
-              <label for="campoServicio" class="etiquetaCampo">Tipo de servicio requerido <span class="marcaRequerido">*</span></label>
+              <label for="campoServicio" class="etiquetaCampo">¿Qué solución te interesa? <span class="marcaRequerido">*</span></label>
               <select id="campoServicio" name="servicioSeleccionado" class="entradaFormulario selectorFormulario" required>
-                <option value="">Selecciona un servicio...</option>
-                <option value="Desarrollo de Software y Web">Desarrollo de Software y Web</option>
-                <option value="Seguridad y CCTV">Seguridad y CCTV</option>
-                <option value="Soporte y Mantenimiento">Soporte y Mantenimiento</option>
-                <option value="Redes e Infraestructura">Redes e Infraestructura</option>
-                <option value="Automatización y Consultoría IT">Automatización y Consultoría IT</option>
-                <option value="Proyecto Integral / Varios">Proyecto Integral / Varios servicios</option>
+                <option value="">Selecciona una opción...</option>
+                <option value="Punto de Venta (POS)">Punto de Venta (POS) - Cobro y control de caja</option>
+                <option value="Landing Pages y Páginas Web">Landing Page o Sitio Web para atraer clientes</option>
+                <option value="Dashboards y Paneles">Dashboard o Panel de Control con gráficas</option>
+                <option value="CRM a la Medida">CRM a la Medida - Control y seguimiento de clientes</option>
+                <option value="Desarrollos con Inteligencia Artificial">Desarrollo con Inteligencia Artificial (IA)</option>
+                <option value="Software 100% a la Medida">Software o Sistema 100% a la medida</option>
+                <option value="Seguridad y Cámaras">Seguridad y Cámaras (ver desde el celular)</option>
+                <option value="Soporte y Mantenimiento">Soporte y Mantenimiento de computadoras</option>
+                <option value="Redes e Internet">Redes e Internet Wi-Fi sin fallas</option>
+                <option value="Proyecto Integral / Varios">Proyecto Integral / Varios servicios combinados</option>
               </select>
               <span id="errorServicio" class="mensajeErrorCampo" role="alert"></span>
             </div>
 
             <div class="grupoCampo">
-              <label for="campoMensaje" class="etiquetaCampo">Detalles de tu solicitud <span class="marcaRequerido">*</span></label>
+              <label for="campoMensaje" class="etiquetaCampo">¿Qué te gustaría que haga tu sistema o qué necesitas resolver? <span class="marcaRequerido">*</span></label>
               <textarea
                 id="campoMensaje"
                 name="mensajeCliente"
                 rows="4"
                 class="entradaFormulario areaTextoFormulario"
-                placeholder="Describe brevemente el proyecto, problema técnico o cantidad de equipos..."
+                placeholder="Ejemplo: Necesito un punto de venta para mi tienda de ropa con lector de código y ticket, o un chatbot con IA para responder en WhatsApp..."
                 required
               ></textarea>
               <span id="errorMensaje" class="mensajeErrorCampo" role="alert"></span>
             </div>
 
-            <button type="submit" id="botonEnviar" class="botonPrimario botonAnchoCompleto">
-              Enviar solicitud de cotización
+            <button type="submit" id="botonEnviar" class="botonPrimario botonAnchoCompleto botonGrande">
+              <span>Enviar mi Solicitud</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
             </button>
 
             <!-- Alerta amigable de confirmación al enviar el formulario -->
             <div id="alertaExitoFormulario" class="alertaExito" role="status" aria-live="polite" hidden>
               <div class="encabezadoAlertaExito">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-                <strong id="tituloAlertaExito">¡Solicitud recibida con éxito!</strong>
+                <div class="circuloExitoVerde">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong id="tituloAlertaExito">¡Solicitud recibida con éxito!</strong>
+                  <p id="textoAlertaExito" class="cuerpoAlertaExito"></p>
+                </div>
               </div>
-              <p id="textoAlertaExito" class="cuerpoAlertaExito"></p>
             </div>
           </form>
         </div>
@@ -441,52 +820,76 @@
     </section>
   </main>
 
-  <!-- Pie de página con datos de contacto y navegación rápida -->
+  <!-- Botón flotante de WhatsApp para contacto rápido -->
+  <a
+    href="https://wa.me/525512345678?text=Hola,%20quisiera%20cotizar%20un%20proyecto%20con%20Codia"
+    class="botonFlotanteWhatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp directamente"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.29-1.93 1.37-.51.08-1.18.11-3.37-.77-2.61-1.05-4.29-3.7-4.42-3.87-.13-.17-1.05-1.39-1.05-2.65s.66-1.88.89-2.14c.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.38-.06.59.45.23.54.77 1.88.84 2.02.07.14.12.31.02.49-.09.18-.14.29-.27.46-.14.16-.29.36-.42.48-.14.14-.29.29-.12.58.17.28.74 1.22 1.6 1.98 1.1 1 2.04 1.31 2.33 1.45.29.15.46.13.63-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.31.15.51.22.59.35.07.13.07.75-.17 1.43z"/>
+    </svg>
+    <span class="globoTooltipWhatsapp">¿Hablamos por WhatsApp?</span>
+  </a>
+
+  <!-- Pie de página con enlaces y diseño limpio -->
   <footer class="piePagina">
     <div class="contenedorPrincipal contenidoPiePagina">
       <div class="columnaMarcaPie">
         <a href="#inicio" class="marcaLogotipo marcaLogotipoPie">
-          <span class="iconoLogotipo" aria-hidden="true">C</span>
-          <span class="textoLogotipo">Codia</span>
+          <div class="iconoLogotipo iconoLogotipoPie" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="bloqueMarcaTexto">
+            <span class="textoLogotipo">Codia</span>
+            <span class="subtextoLogotipo">Tech &amp; IA Solutions</span>
+          </div>
         </a>
         <p class="descripcionPie">
-          Soluciones tecnológicas integrales para empresas, comercios y particulares. Desarrollo, infraestructura, seguridad y soporte técnico confiable.
+          Desarrollamos soluciones digitales a la medida: Puntos de Venta, CRM, Dashboards, Asistentes de Inteligencia Artificial y Seguridad para impulsar tu negocio de forma sencilla.
         </p>
       </div>
 
       <div class="columnaEnlacesPie">
-        <h3 class="tituloColumnaPie">Navegación</h3>
+        <h4 class="tituloColumnaPie">Lo que desarrollamos</h4>
         <ul class="listaPie">
-          <li><a href="#inicio" class="enlacePie">Inicio</a></li>
-          <li><a href="#servicios" class="enlacePie">Servicios</a></li>
-          <li><a href="#nosotros" class="enlacePie">Por qué elegirnos</a></li>
-          <li><a href="#contacto" class="enlacePie">Solicitar cotización</a></li>
+          <li><a href="#soluciones" class="enlacePie">Puntos de Venta (POS)</a></li>
+          <li><a href="#soluciones" class="enlacePie">Landing Pages y Webs</a></li>
+          <li><a href="#soluciones" class="enlacePie">Dashboards y Paneles</a></li>
+          <li><a href="#soluciones" class="enlacePie">CRM a la Medida</a></li>
+          <li><a href="#soluciones" class="enlacePie">Inteligencia Artificial (IA)</a></li>
         </ul>
       </div>
 
       <div class="columnaEnlacesPie">
-        <h3 class="tituloColumnaPie">Servicios principales</h3>
+        <h4 class="tituloColumnaPie">Servicios y Soporte</h4>
         <ul class="listaPie">
-          <li><a href="#servicios" class="enlacePie">Desarrollo Web y Software</a></li>
-          <li><a href="#servicios" class="enlacePie">Cámaras de Seguridad CCTV</a></li>
-          <li><a href="#servicios" class="enlacePie">Mantenimiento de Cómputo</a></li>
-          <li><a href="#servicios" class="enlacePie">Redes y Cableado Estructurado</a></li>
-          <li><a href="#servicios" class="enlacePie">Consultoría y Automatización</a></li>
+          <li><a href="#soluciones" class="enlacePie">Seguridad y Cámaras</a></li>
+          <li><a href="#soluciones" class="enlacePie">Soporte y Computadoras</a></li>
+          <li><a href="#soluciones" class="enlacePie">Redes e Internet Wi-Fi</a></li>
+          <li><a href="#por-que-codia" class="enlacePie">Cómo trabajamos</a></li>
+          <li><a href="#preguntas" class="enlacePie">Preguntas Frecuentes</a></li>
         </ul>
       </div>
 
       <div class="columnaEnlacesPie">
-        <h3 class="tituloColumnaPie">Contacto directo</h3>
+        <h4 class="tituloColumnaPie">Contacto directo</h4>
         <ul class="listaPie">
-          <li>Tel / WhatsApp: <a href="tel:+525512345678" class="enlacePie">+52 (55) 1234 5678</a></li>
+          <li>WhatsApp: <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" class="enlacePie">+52 (55) 1234 5678</a></li>
           <li>Email: <a href="mailto:contacto@codia.mx" class="enlacePie">contacto@codia.mx</a></li>
           <li>Atención en sitio y remota</li>
+          <li>Garantía directa en cada desarrollo</li>
         </ul>
       </div>
     </div>
 
     <div class="contenedorPrincipal barraDerechosAutor">
-      <p>&copy; <span id="anioActual">2026</span> Codia Soluciones Tecnológicas. Todos los derechos reservados.</p>
+      <p>&copy; <span id="anioActual">2026</span> Codia Soluciones Tecnológicas. Desarrollos con IA, Software a la Medida y Seguridad.</p>
     </div>
   </footer>
 
