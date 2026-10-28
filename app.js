@@ -1,5 +1,5 @@
 /**
- * Codia - Interactividad, Pestañas de Demostración, Acordeón FAQ y Cotizador
+ * Romsan R&S Consulting - Interactividad, Pestañas de Demostración, Acordeón FAQ y Cotizador
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -284,4 +284,46 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500);
     });
   }
+
+  // ---------------------------------------------------------------------------
+  // 7. Filtros Interactivos de Soluciones por Categoría
+  // ---------------------------------------------------------------------------
+  const filtrosPills = document.querySelectorAll('.filtroPill');
+  const tarjetasServicios = document.querySelectorAll('.tarjetaServicio');
+
+  if (filtrosPills.length > 0 && tarjetasServicios.length > 0) {
+    filtrosPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const categoria = pill.getAttribute('data-filtro');
+
+        filtrosPills.forEach((p) => p.classList.remove('activo'));
+        pill.classList.add('activo');
+
+        tarjetasServicios.forEach((tarjeta) => {
+          const catTarjeta = tarjeta.getAttribute('data-categoria');
+          if (categoria === 'todos' || catTarjeta === categoria) {
+            tarjeta.classList.remove('ocultaPorFiltro');
+            tarjeta.style.animation = 'sutilEntrada 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+          } else {
+            tarjeta.classList.add('ocultaPorFiltro');
+          }
+        });
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------------------
+  // 8. Barra de Progreso de Lectura Scroll Superior
+  // ---------------------------------------------------------------------------
+  const barraProgresoLectura = document.getElementById('barraProgresoLectura');
+  if (barraProgresoLectura) {
+    window.addEventListener('scroll', () => {
+      const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollTotal > 0) {
+        const porcentaje = (window.scrollY / scrollTotal) * 100;
+        barraProgresoLectura.style.width = `${Math.min(100, Math.max(0, porcentaje))}%`;
+      }
+    }, { passive: true });
+  }
 });
+

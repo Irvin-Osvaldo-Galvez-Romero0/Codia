@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Codia - Desarrollo de software a la medida, puntos de venta, landing pages, dashboards, CRM, soluciones con Inteligencia Artificial y seguridad para tu negocio.">
-  <title>Codia | Software a la Medida, Puntos de Venta, CRM, IA y Seguridad</title>
-  
+  <meta name="description"
+    content="Romsan R&S Consulting - Desarrollo de software empresarial a la medida, puntos de venta, dashboards, CRM, soluciones con Inteligencia Artificial y seguridad para tu negocio.">
+  <title>Romsan R&S Consulting | Software Empresarial, POS, CRM, IA & Consultoría</title>
+
   <!-- Tipografía moderna Google Fonts: Plus Jakarta Sans e Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
 
-  <!-- Barra de navegación fija con diseño moderno en blanco y verde esmeralda -->
+<body>
+  <!-- Barra de progreso de lectura superior -->
+  <div id="barraProgresoLectura" class="barraProgresoLectura" aria-hidden="true"></div>
+
+  <!-- Barra de navegación fija con diseño moderno translúcido -->
   <header id="encabezadoPrincipal" class="encabezadoSitio">
     <div class="contenedorPrincipal barraNavegacion">
-      <a href="#inicio" class="marcaLogotipo" aria-label="Codia - Ir al inicio">
+      <a href="#inicio" class="marcaLogotipo" aria-label="Romsan R&S Consulting - Ir al inicio">
         <div class="iconoLogotipo" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="9 18 3 12 9 6" stroke="#A1A1AA" class="trazoCodigoIzq"></polyline>
+            <polyline points="15 6 21 12 15 18" stroke="#D97706" class="trazoCodigoDer"></polyline>
           </svg>
         </div>
         <div class="bloqueMarcaTexto">
-          <span class="textoLogotipo">Codia</span>
-          <span class="subtextoLogotipo">Tech &amp; IA Solutions</span>
+          <span class="textoLogotipo">RomSan</span>
+          <span class="subtextoLogotipo"><span class="subtextoRS">R&amp;S</span> <span
+              class="subtextoConsulting">CONSULTING</span></span>
         </div>
       </a>
 
-      <button
-        type="button"
-        id="botonMenuMovil"
-        class="botonHamburguesa"
-        aria-expanded="false"
-        aria-controls="menuNavegacion"
-        aria-label="Abrir menú de navegación"
-      >
+      <button type="button" id="botonMenuMovil" class="botonHamburguesa" aria-expanded="false"
+        aria-controls="menuNavegacion" aria-label="Abrir menú de navegación">
         <span class="lineaHamburguesa"></span>
         <span class="lineaHamburguesa"></span>
         <span class="lineaHamburguesa"></span>
@@ -49,14 +52,16 @@
           <li><a href="#inicio" class="enlaceNavegacion">Inicio</a></li>
           <li><a href="#soluciones" class="enlaceNavegacion">Lo que Desarrollamos</a></li>
           <li><a href="#demo" class="enlaceNavegacion">Demostración</a></li>
-          <li><a href="#por-que-codia" class="enlaceNavegacion">Ventajas</a></li>
+          <li><a href="#por-que-romsan" class="enlaceNavegacion">Ventajas</a></li>
+          <li><a href="#testimonios" class="enlaceNavegacion">Casos de Éxito</a></li>
           <li><a href="#preguntas" class="enlaceNavegacion">Preguntas</a></li>
           <li><a href="#contacto" class="enlaceNavegacion">Contacto</a></li>
         </ul>
         <div class="accionesMenu">
           <a href="#contacto" class="botonPrimario botonCotizarMenu">
             <span>Cotizar Proyecto</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
@@ -78,7 +83,7 @@
         <div class="contenidoHero">
           <div class="insigniaHero">
             <span class="puntoPulso"></span>
-            <span>Software a la Medida · Inteligencia Artificial · Seguridad</span>
+            <span>Romsan R&amp;S Consulting · Software &amp; Soluciones IA</span>
           </div>
 
           <h1 class="tituloPrincipal">
@@ -86,19 +91,23 @@
           </h1>
 
           <p class="descripcionHero">
-            Desarrollamos tecnología <strong>100% fácil de usar y a tu medida</strong>: desde landing pages que atraen clientes y dashboards para controlar tus ventas, hasta asistentes de Inteligencia Artificial y sistemas de seguridad. Sin tecnicismos raros ni complicaciones.
+            En <strong>Romsan R&amp;S Consulting</strong> desarrollamos tecnología de alto rendimiento, ágil e
+            intuitiva: desde landing pages que convierten y dashboards ejecutivos, hasta agentes autónomos de
+            Inteligencia Artificial y seguridad perimetral.
           </p>
 
           <div class="grupoBotonesHero">
             <a href="#contacto" class="botonPrimario botonGrande">
               <span>Cuéntanos tu idea</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
             <a href="#soluciones" class="botonSecundario botonGrande">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polygon points="10 8 16 12 10 16 10 8"></polygon>
               </svg>
@@ -109,22 +118,22 @@
           <div class="metricasConfianza">
             <div class="itemMetrica">
               <span class="valorMetrica">100%</span>
-              <span class="etiquetaMetrica">A la medida de tu negocio</span>
+              <span class="etiquetaMetrica">A la medida de tu empresa</span>
             </div>
             <div class="separadorMetrica" aria-hidden="true"></div>
             <div class="itemMetrica">
-              <span class="valorMetrica">Fácil</span>
-              <span class="etiquetaMetrica">Sin tecnicismos complicados</span>
+              <span class="valorMetrica">Ágil</span>
+              <span class="etiquetaMetrica">Consultoría e integración</span>
             </div>
             <div class="separadorMetrica" aria-hidden="true"></div>
             <div class="itemMetrica">
               <span class="valorMetrica">Directo</span>
-              <span class="etiquetaMetrica">Soporte y garantía real</span>
+              <span class="etiquetaMetrica">Soporte y garantía ejecutiva</span>
             </div>
           </div>
         </div>
 
-        <!-- Maqueta visual interactiva de la interfaz de Codia -->
+        <!-- Maqueta visual interactiva de la interfaz de Romsan R&S Consulting -->
         <div class="contenedorMaquetaHero" id="demo">
           <div class="panelOperativo">
             <div class="cabeceraPanel">
@@ -134,10 +143,12 @@
                 <span class="puntoControl puntoVerde"></span>
               </div>
               <div class="pestanasPanel" role="tablist" aria-label="Demostración de sistemas">
-                <button type="button" class="pestanaPanel activa" role="tab" aria-selected="true" data-tab="pos" id="tab-pos">
+                <button type="button" class="pestanaPanel activa" role="tab" aria-selected="true" data-tab="pos"
+                  id="tab-pos">
                   Punto de Venta
                 </button>
-                <button type="button" class="pestanaPanel" role="tab" aria-selected="false" data-tab="dashboard" id="tab-dashboard">
+                <button type="button" class="pestanaPanel" role="tab" aria-selected="false" data-tab="dashboard"
+                  id="tab-dashboard">
                   Dashboard &amp; CRM
                 </button>
                 <button type="button" class="pestanaPanel" role="tab" aria-selected="false" data-tab="ia" id="tab-ia">
@@ -254,7 +265,8 @@
                       <span class="iconoIABadge">✨</span>
                       <span class="autorChat">Tu Asistente con IA:</span>
                     </div>
-                    <p>¡Hola! Sí tenemos disponibilidad mañana a las 11:00 AM o 4:00 PM. El costo es de $850 y puedo apartar tu lugar en este momento, ¿te agendo a las 11:00?</p>
+                    <p>¡Hola! Sí tenemos disponibilidad mañana a las 11:00 AM o 4:00 PM. El costo es de $850 y puedo
+                      apartar tu lugar en este momento, ¿te agendo a las 11:00?</p>
                   </div>
                 </div>
 
@@ -279,6 +291,19 @@
           </div>
         </div>
       </div>
+
+      <!-- Franja interactiva de Stack Tecnológico de Grado Empresarial -->
+      <div class="contenedorPrincipal franjaTecnologicaHero">
+        <span class="etiquetaFranjaTec">Ecosistema &amp; Tecnologías que Dominamos:</span>
+        <div class="listaChipsTecnologia">
+          <div class="chipTec"><span class="puntoTec"></span><span>Python &amp; FastAPI</span></div>
+          <div class="chipTec"><span class="puntoTec"></span><span>OpenAI &amp; Agentes IA</span></div>
+          <div class="chipTec"><span class="puntoTec"></span><span>React &amp; Next.js</span></div>
+          <div class="chipTec"><span class="puntoTec"></span><span>PostgreSQL &amp; Cloud POS</span></div>
+          <div class="chipTec"><span class="puntoTec"></span><span>WhatsApp Cloud API</span></div>
+          <div class="chipTec"><span class="puntoTec"></span><span>CCTV &amp; Redes Ubiquiti</span></div>
+        </div>
+      </div>
     </section>
 
     <!-- SECCIÓN DE SOLUCIONES EXPLICADAS EN LENGUAJE AMIGABLE -->
@@ -288,17 +313,35 @@
           <span class="subtituloSeccion">Desarrollo y Tecnología Sin Enredos</span>
           <h2 class="tituloSeccion">¿Qué podemos crear para hacer crecer tu negocio?</h2>
           <p class="descripcionSeccion">
-            No necesitas saber de programación. Cuéntanos qué problema quieres resolver o qué te gustaría automatizar y nosotros lo construimos a tu medida.
+            No necesitas saber de programación. Cuéntanos qué problema quieres resolver o qué te gustaría automatizar y
+            nosotros lo construimos a tu medida.
           </p>
+
+          <!-- Filtros de Categorías de Servicio con Pills Interactivas -->
+          <div class="contenedorFiltrosServicios" role="group" aria-label="Filtrar soluciones por categoría">
+            <button type="button" class="filtroPill activo" data-filtro="todos">
+              <span>Todas las Soluciones (9)</span>
+            </button>
+            <button type="button" class="filtroPill" data-filtro="software">
+              <span>💻 Software &amp; POS</span>
+            </button>
+            <button type="button" class="filtroPill" data-filtro="ia-web">
+              <span>✨ IA &amp; Web</span>
+            </button>
+            <button type="button" class="filtroPill" data-filtro="infraestructura">
+              <span>🛡️ Infraestructura &amp; Cámaras</span>
+            </button>
+          </div>
         </div>
 
         <div id="listaServicios" class="cuadriculaServicios">
-          
+
           <!-- 1. PUNTOS DE VENTA (POS) -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="software">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
                   <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -308,7 +351,8 @@
             </div>
             <h3 class="tituloTarjetaServicio">Puntos de Venta (POS)</h3>
             <p class="textoTarjetaServicio">
-              Un sistema rápido para cobrar en tu mostrador, tienda o negocio. Olvídate de hacer cuentas en papel o tener fugas de dinero.
+              Un sistema rápido para cobrar en tu mostrador, tienda o negocio. Olvídate de hacer cuentas en papel o
+              tener fugas de dinero.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Cobro ágil:</strong> compatible con lector de códigos de barras e impresoras de tickets.</li>
@@ -322,20 +366,23 @@
           </article>
 
           <!-- 2. LANDING PAGES Y SITIOS WEB -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="ia-web">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="2" y1="12" x2="22" y2="12"></line>
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
                 </svg>
               </div>
               <span class="etiquetaVerde">Atracción</span>
             </div>
             <h3 class="tituloTarjetaServicio">Landing Pages y Páginas Web</h3>
             <p class="textoTarjetaServicio">
-              Páginas diseñadas con un solo objetivo: <strong>atraer personas interesadas y convertirlas en clientes</strong> que te escriban directo a WhatsApp.
+              Páginas diseñadas con un solo objetivo: <strong>atraer personas interesadas y convertirlas en
+                clientes</strong> que te escriban directo a WhatsApp.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Ultra rápidas:</strong> abren al instante en cualquier teléfono o computadora.</li>
@@ -349,10 +396,11 @@
           </article>
 
           <!-- 3. DASHBOARDS Y PANELES DE CONTROL -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="software">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M3 3v18h18"></path>
                   <path d="M18 17V9"></path>
                   <path d="M13 17V5"></path>
@@ -363,7 +411,8 @@
             </div>
             <h3 class="tituloTarjetaServicio">Dashboards y Paneles de Control</h3>
             <p class="textoTarjetaServicio">
-              Un panel visual con gráficas claras para ver la salud de tu negocio en una sola pantalla: cuánto vendes, qué gastas y qué producto rinde más.
+              Un panel visual con gráficas claras para ver la salud de tu negocio en una sola pantalla: cuánto vendes,
+              qué gastas y qué producto rinde más.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Gráficas fáciles de entender:</strong> adiós a hojas de Excel confusas y desordenadas.</li>
@@ -377,10 +426,11 @@
           </article>
 
           <!-- 4. CRM A LA MEDIDA -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="software">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -391,10 +441,12 @@
             </div>
             <h3 class="tituloTarjetaServicio">CRM a la Medida (Control de Clientes)</h3>
             <p class="textoTarjetaServicio">
-              Nunca más pierdas una venta por olvidar dar seguimiento. Organiza tus prospectos, mensajes, llamadas y cotizaciones en un solo lugar.
+              Nunca más pierdas una venta por olvidar dar seguimiento. Organiza tus prospectos, mensajes, llamadas y
+              cotizaciones en un solo lugar.
             </p>
             <ul class="listaPuntosServicio">
-              <li><strong>Embudo de ventas:</strong> mira en qué paso va cada cliente (interesado, cotizado, pagado).</li>
+              <li><strong>Embudo de ventas:</strong> mira en qué paso va cada cliente (interesado, cotizado, pagado).
+              </li>
               <li><strong>Recordatorios de cobranza y citas:</strong> no dejes pasar pagos pendientes.</li>
               <li><strong>Adaptado a tu proceso:</strong> se ajusta a cómo vendes tú, no al revés.</li>
             </ul>
@@ -405,21 +457,26 @@
           </article>
 
           <!-- 5. INTELIGENCIA ARTIFICIAL (IA) -->
-          <article class="tarjetaServicio tarjetaDestacadaIA">
+          <article class="tarjetaServicio tarjetaDestacadaIA" data-categoria="ia-web">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio iconoIAEspecial" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                  </path>
                 </svg>
               </div>
               <span class="etiquetaIA">Tecnología Inteligente</span>
             </div>
             <h3 class="tituloTarjetaServicio">Desarrollos con Inteligencia Artificial</h3>
             <p class="textoTarjetaServicio">
-              Pon la IA a trabajar en tu negocio para responder clientes las 24 horas, automatizar tareas repetitivas y ahorrar decenas de horas de trabajo a la semana.
+              Pon la IA a trabajar en tu negocio para responder clientes las 24 horas, automatizar tareas repetitivas y
+              ahorrar decenas de horas de trabajo a la semana.
             </p>
             <ul class="listaPuntosServicio">
-              <li><strong>Asistente inteligente en WhatsApp:</strong> atiende dudas y toma pedidos mientras duermes.</li>
+              <li><strong>Asistente inteligente en WhatsApp:</strong> atiende dudas y toma pedidos mientras duermes.
+              </li>
               <li><strong>Automatización de tareas:</strong> clasificación de correos, facturas o mensajes.</li>
               <li><strong>Análisis inteligente:</strong> resúmenes y recomendaciones basadas en tus ventas.</li>
             </ul>
@@ -430,10 +487,11 @@
           </article>
 
           <!-- 6. SOFTWARE Y SISTEMAS 100% A LA MEDIDA -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="software">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
@@ -442,7 +500,8 @@
             </div>
             <h3 class="tituloTarjetaServicio">Sistemas 100% a la Medida</h3>
             <p class="textoTarjetaServicio">
-              ¿Tienes una forma única de trabajar? Creamos el sistema exactamente con los botones, funciones y pantallas que tú necesitas, sin pagar mensualidades absurdas.
+              ¿Tienes una forma única de trabajar? Creamos el sistema exactamente con los botones, funciones y pantallas
+              que tú necesitas, sin pagar mensualidades absurdas.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Hecho para tu negocio:</strong> no tienes que adaptarte tú al programa.</li>
@@ -456,10 +515,11 @@
           </article>
 
           <!-- 7. SEGURIDAD Y CÁMARAS (EXPLICADO SIMPLE, SIN TECNICISMOS COMO CCTV) -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="infraestructura">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
               </div>
@@ -467,11 +527,13 @@
             </div>
             <h3 class="tituloTarjetaServicio">Seguridad y Cámaras de Vigilancia</h3>
             <p class="textoTarjetaServicio">
-              Protege tu negocio, almacén o casa. Instalamos cámaras para que <strong>puedas ver todo en vivo desde tu celular en cualquier momento</strong> con imagen nítida.
+              Protege tu negocio, almacén o casa. Instalamos cámaras para que <strong>puedas ver todo en vivo desde tu
+                celular en cualquier momento</strong> con imagen nítida.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Monitoreo en tu celular:</strong> mira lo que pasa en tiempo real estés donde estés.</li>
-              <li><strong>Grabación continua:</strong> guarda videos de días o semanas para aclarar cualquier incidente.</li>
+              <li><strong>Grabación continua:</strong> guarda videos de días o semanas para aclarar cualquier incidente.
+              </li>
               <li><strong>Instalación limpia y estética:</strong> cables ocultos y equipos resistentes.</li>
             </ul>
             <button type="button" class="enlaceCotizarServicio" data-servicio="Seguridad y Cámaras">
@@ -481,10 +543,11 @@
           </article>
 
           <!-- 8. MANTENIMIENTO Y SOPORTE DE COMPUTADORAS -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="infraestructura">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
                   <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -494,7 +557,8 @@
             </div>
             <h3 class="tituloTarjetaServicio">Soporte y Mantenimiento de Computadoras</h3>
             <p class="textoTarjetaServicio">
-              ¿Tus computadoras o laptops están lentas o se calientan? Las dejamos como nuevas para que tu equipo trabaje rápido y sin trabas.
+              ¿Tus computadoras o laptops están lentas o se calientan? Las dejamos como nuevas para que tu equipo
+              trabaje rápido y sin trabas.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Aceleración de equipos:</strong> cambio a discos rápidos SSD y aumento de memoria.</li>
@@ -508,10 +572,11 @@
           </article>
 
           <!-- 9. REDES E INTERNET SIN FALLAS -->
-          <article class="tarjetaServicio">
+          <article class="tarjetaServicio" data-categoria="infraestructura">
             <div class="cabeceraTarjetaServicio">
               <div class="iconoServicio" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
                   <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
                   <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
@@ -522,7 +587,8 @@
             </div>
             <h3 class="tituloTarjetaServicio">Redes e Internet Rápido</h3>
             <p class="textoTarjetaServicio">
-              Elimina los rincones sin señal de Wi-Fi y las caídas de internet en tu oficina, local o taller con una red estable y bien organizada.
+              Elimina los rincones sin señal de Wi-Fi y las caídas de internet en tu oficina, local o taller con una red
+              estable y bien organizada.
             </p>
             <ul class="listaPuntosServicio">
               <li><strong>Wi-Fi potente en todo el lugar:</strong> sin cortes cuando muchos se conectan.</li>
@@ -540,13 +606,14 @@
     </section>
 
     <!-- SECCIÓN INTERACTIVA: ¿CÓMO TRABAJAMOS? (PASO A PASO SENCILLO) -->
-    <section id="por-que-codia" class="seccionNosotros">
+    <section id="por-que-romsan" class="seccionNosotros">
       <div class="contenedorPrincipal">
         <div class="encabezadoSeccion">
-          <span class="subtituloSeccion">Sin sorpresas ni palabras confusas</span>
+          <span class="subtituloSeccion">Metodología Romsan R&amp;S Consulting</span>
           <h2 class="tituloSeccion">Así convertimos tu necesidad en una solución lista para usar</h2>
           <p class="descripcionSeccion">
-            Desde la primera llamada te hablamos claro: precios justos, tiempos de entrega reales y acompañamiento en todo momento.
+            Desde la primera llamada te hablamos claro: precios justos, tiempos de entrega reales y acompañamiento de
+            consultoría en todo momento.
           </p>
         </div>
 
@@ -554,36 +621,40 @@
           <div class="tarjetaPaso">
             <div class="numeroPaso">01</div>
             <div class="iconoPaso">💬</div>
-            <h3 class="tituloPaso">1. Nos platicas tu idea</h3>
+            <h3 class="tituloPaso">1. Diagnóstico y requerimientos</h3>
             <p class="descripcionPaso">
-              Nos cuentas qué hace tu negocio, qué problema tienes o qué te gustaría automatizar. Te escuchamos y te sugerimos la opción más práctica y económica.
+              Nos cuentas qué hace tu empresa, qué proceso deseas optimizar o qué sistema necesitas. Te asesoramos con
+              la arquitectura más eficiente y costo-efectiva.
             </p>
           </div>
 
           <div class="tarjetaPaso">
             <div class="numeroPaso">02</div>
             <div class="iconoPaso">📋</div>
-            <h3 class="tituloPaso">2. Propuesta clara y sin compromiso</h3>
+            <h3 class="tituloPaso">2. Propuesta ejecutiva clara</h3>
             <p class="descripcionPaso">
-              Te entregamos un presupuesto detallado donde sabes exactamente qué incluye, cuánto cuesta y en cuántos días estará listo.
+              Te entregamos un presupuesto detallado donde sabes exactamente qué incluye, las fases de desarrollo y los
+              entregables estipulados.
             </p>
           </div>
 
           <div class="tarjetaPaso">
             <div class="numeroPaso">03</div>
             <div class="iconoPaso">⚡</div>
-            <h3 class="tituloPaso">3. Desarrollo y pruebas contigo</h3>
+            <h3 class="tituloPaso">3. Desarrollo y pruebas en conjunto</h3>
             <p class="descripcionPaso">
-              Construimos tu sistema o instalamos tus equipos. Te mostramos avances para que veas cómo va quedando y apruebes cada detalle.
+              Construimos tu plataforma o integramos tus modelos. Te mostramos avances iterativos para validar cada
+              funcionalidad en entornos reales.
             </p>
           </div>
 
           <div class="tarjetaPaso">
             <div class="numeroPaso">04</div>
             <div class="iconoPaso">🚀</div>
-            <h3 class="tituloPaso">4. Puesta en marcha y soporte</h3>
+            <h3 class="tituloPaso">4. Despliegue y capacitación continua</h3>
             <p class="descripcionPaso">
-              Te enseñamos a usarlo a ti y a tu personal con paciencia. Y si después tienes dudas o necesitas cambios, cuentas con nosotros.
+              Capacitamos a tu equipo con documentación clara y soporte técnico proactivo para asegurar una transición
+              fluida y adopción total.
             </p>
           </div>
         </div>
@@ -591,12 +662,76 @@
         <div class="cajaDestacadaConfianza">
           <div class="iconoCajaConfianza">🤝</div>
           <div class="textoCajaConfianza">
-            <h4>¿Tienes dudas sobre qué opción te conviene más?</h4>
-            <p>Escríbenos directamente por WhatsApp. Te asesoramos sin costo para decirte si necesitas un Punto de Venta sencillo, una Landing Page o automatizar con IA.</p>
+            <h4>¿Tienes dudas sobre qué solución es ideal para tu empresa?</h4>
+            <p>Escríbenos directamente por WhatsApp. Nuestro equipo de consultoría en Romsan R&amp;S te asesora sin
+              costo para estructurar tu proyecto.</p>
           </div>
-          <a href="https://wa.me/525512345678?text=Hola,%20quisiera%20asesor%C3%ADa%20para%20un%20proyecto%20con%20Codia" target="_blank" rel="noopener noreferrer" class="botonPrimario">
+          <a href="https://wa.me/525512345678?text=Hola,%20quisiera%20asesor%C3%ADa%20para%20un%20proyecto%20con%20Romsan%20R%26S%20Consulting"
+            target="_blank" rel="noopener noreferrer" class="botonPrimario">
             <span>Hablar por WhatsApp</span>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CASOS DE ÉXITO & TESTIMONIOS (CONFEDERACIÓN DE CONFIANZA) -->
+    <section id="testimonios" class="seccionTestimonios">
+      <div class="contenedorPrincipal">
+        <div class="encabezadoSeccion">
+          <span class="subtituloSeccion">Resultados Reales</span>
+          <h2 class="tituloSeccion">Empresas que escalaron con Romsan R&amp;S Consulting</h2>
+          <p class="descripcionSeccion">
+            Historias de negocios que redujeron costos, erradicaron fugas de dinero y aceleraron sus ventas con nuestras
+            soluciones.
+          </p>
+        </div>
+
+        <div class="cuadriculaTestimonios">
+          <div class="tarjetaTestimonio">
+            <div class="estrellasTestimonio">★★★★★</div>
+            <p class="citaTestimonio">
+              "El Punto de Venta y control de inventario nos resolvió un caos de 3 años. Ahora cerramos caja en 5
+              minutos y desde mi celular puedo ver las ventas exactas de las 3 sucursales."
+            </p>
+            <div class="perfilTestimonio">
+              <div class="avatarTestimonio">RM</div>
+              <div>
+                <strong class="nombreAutor">Lic. Roberto Morales</strong>
+                <span class="cargoAutor">Director General · Grupo Distribuidor M&amp;R</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjetaTestimonio tarjetaTestimonioDestacada">
+            <div class="badgeTestimonio">Caso Destacado IA</div>
+            <div class="estrellasTestimonio">★★★★★</div>
+            <p class="citaTestimonio">
+              "El agente de IA para WhatsApp que nos configuró Romsan atiende a más de 120 clientes diarios, agenda las
+              citas directo al calendario y nunca deja a un prospecto esperando en la noche."
+            </p>
+            <div class="perfilTestimonio">
+              <div class="avatarTestimonio">SC</div>
+              <div>
+                <strong class="nombreAutor">Dra. Sofía Camargo</strong>
+                <span class="cargoAutor">Fundadora · Red Médica Especializada</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tarjetaTestimonio">
+            <div class="estrellasTestimonio">★★★★★</div>
+            <p class="citaTestimonio">
+              "Nos desarrollaron un CRM a la medida con las etapas exactas de nuestro proceso. Triplicamos la tasa de
+              cotizaciones cerradas y el soporte que brindan es 100% resolutivo."
+            </p>
+            <div class="perfilTestimonio">
+              <div class="avatarTestimonio">AV</div>
+              <div>
+                <strong class="nombreAutor">Ing. Alejandro Valdés</strong>
+                <span class="cargoAutor">Socio Fundador · Valdés Logística &amp; Carga</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -613,34 +748,43 @@
         </div>
 
         <div class="acordeonPreguntas" id="acordeonFAQ">
-          
+
           <div class="itemAcordeon abierto">
             <button type="button" class="botonPregunta" aria-expanded="true">
-              <span class="textoPregunta">¿Puedo pedir solo un Punto de Venta o una Landing Page sin contratar todo lo demás?</span>
+              <span class="textoPregunta">¿Puedo pedir solo un Punto de Venta o una Landing Page sin contratar todo lo
+                demás?</span>
               <span class="iconoAcordeon" aria-hidden="true">+</span>
             </button>
             <div class="respuestaAcordeon">
-              <p>¡Totalmente! Cada servicio es independiente. Puedes pedir únicamente una Landing Page para comenzar a captar clientes, o únicamente un Punto de Venta para tu mostrador. Solo pagas por lo que tú necesitas.</p>
+              <p>¡Totalmente! Cada servicio es independiente. Puedes pedir únicamente una Landing Page para comenzar a
+                captar clientes, o únicamente un Punto de Venta para tu mostrador. Solo pagas por lo que tú necesitas.
+              </p>
             </div>
           </div>
 
           <div class="itemAcordeon">
             <button type="button" class="botonPregunta" aria-expanded="false">
-              <span class="textoPregunta">¿Cómo puede la Inteligencia Artificial (IA) ayudar a un negocio pequeño o mediano?</span>
+              <span class="textoPregunta">¿Cómo puede la Inteligencia Artificial (IA) ayudar a un negocio pequeño o
+                mediano?</span>
               <span class="iconoAcordeon" aria-hidden="true">+</span>
             </button>
             <div class="respuestaAcordeon">
-              <p>La IA puede atender a tus clientes por WhatsApp a cualquier hora contestando preguntas frecuentes, cotizando al momento e incluso agendando citas, para que no pierdas ventas cuando estés ocupado o fuera de horario laboral.</p>
+              <p>La IA puede atender a tus clientes por WhatsApp a cualquier hora contestando preguntas frecuentes,
+                cotizando al momento e incluso agendando citas, para que no pierdas ventas cuando estés ocupado o fuera
+                de horario laboral.</p>
             </div>
           </div>
 
           <div class="itemAcordeon">
             <button type="button" class="botonPregunta" aria-expanded="false">
-              <span class="textoPregunta">¿Cómo funciona el servicio de seguridad y cámaras? ¿Tengo que saber algo técnico?</span>
+              <span class="textoPregunta">¿Cómo funciona el servicio de seguridad y cámaras? ¿Tengo que saber algo
+                técnico?</span>
               <span class="iconoAcordeon" aria-hidden="true">+</span>
             </button>
             <div class="respuestaAcordeon">
-              <p>Para nada. Nosotros nos encargamos de todo el montaje, la conexión y de instalarte una aplicación muy sencilla en tu celular (iPhone o Android) para que con un solo toque veas tus cámaras en vivo desde donde estés.</p>
+              <p>Para nada. Nosotros nos encargamos de todo el montaje, la conexión y de instalarte una aplicación muy
+                sencilla en tu celular (iPhone o Android) para que con un solo toque veas tus cámaras en vivo desde
+                donde estés.</p>
             </div>
           </div>
 
@@ -650,7 +794,8 @@
               <span class="iconoAcordeon" aria-hidden="true">+</span>
             </button>
             <div class="respuestaAcordeon">
-              <p>Al ser desarrollos a la medida, el sistema puede crecer al ritmo de tu empresa. Si en 6 meses quieres agregar sucursales, facturación electrónica o un módulo nuevo, se le añade fácilmente.</p>
+              <p>Al ser desarrollos a la medida, el sistema puede crecer al ritmo de tu empresa. Si en 6 meses quieres
+                agregar sucursales, facturación electrónica o un módulo nuevo, se le añade fácilmente.</p>
             </div>
           </div>
 
@@ -665,14 +810,18 @@
           <span class="subtituloSeccion">Contacto directo</span>
           <h2 class="tituloSeccion">Cuéntanos tu proyecto y recibe una propuesta</h2>
           <p class="descripcionContacto">
-            Llena los datos a continuación y nos pondremos en contacto contigo hoy mismo por WhatsApp o correo con una estimación clara.
+            Llena los datos a continuación y nos pondremos en contacto contigo hoy mismo por WhatsApp o correo con una
+            estimación clara.
           </p>
 
           <div class="tarjetaContactoVerde">
             <div class="filaContactoDirecto">
               <div class="circuloIconoVerde">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
                 </svg>
               </div>
               <div>
@@ -683,26 +832,28 @@
 
             <div class="filaContactoDirecto">
               <div class="circuloIconoVerde">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
               <div>
                 <span class="etiquetaDato">Correo Electrónico</span>
-                <a href="mailto:contacto@codia.mx" class="valorDato">contacto@codia.mx</a>
+                <a href="mailto:contacto@romsan.com" class="valorDato">contacto@romsan.com</a>
               </div>
             </div>
 
             <div class="filaContactoDirecto">
               <div class="circuloIconoVerde">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
               </div>
               <div>
-                <span class="etiquetaDato">Horario de Atención</span>
+                <span class="etiquetaDato">Horario de Consultoría</span>
                 <span class="valorDato">Lunes a Sábado · 9:00 a 19:00 hrs</span>
               </div>
             </div>
@@ -713,88 +864,70 @@
         <div class="contenedorFormulario">
           <form id="formularioContacto" class="formularioCotizacion" novalidate>
             <div class="cabeceraFormulario">
-              <h3 class="tituloCajaForm">Solicitud de Cotización</h3>
-              <p class="subtituloCajaForm">Respuesta promedio en menos de 2 horas</p>
+              <h3 class="tituloCajaForm">Solicitud de Cotización &amp; Asesoría</h3>
+              <p class="subtituloCajaForm">Respuesta ejecutiva en menos de 2 horas</p>
             </div>
 
             <div class="grupoCampo">
-              <label for="campoNombre" class="etiquetaCampo">Tu nombre o el de tu negocio <span class="marcaRequerido">*</span></label>
-              <input
-                type="text"
-                id="campoNombre"
-                name="nombreCliente"
-                class="entradaFormulario"
-                placeholder="Ej. Juan Pérez / Abarrotes San Juan"
-                autocomplete="name"
-                required
-              >
+              <label for="campoNombre" class="etiquetaCampo">Tu nombre o el de tu empresa <span
+                  class="marcaRequerido">*</span></label>
+              <input type="text" id="campoNombre" name="nombreCliente" class="entradaFormulario"
+                placeholder="Ej. Ing. Juan Pérez / Empresa S.A." autocomplete="name" required>
               <span id="errorNombre" class="mensajeErrorCampo" role="alert"></span>
             </div>
 
             <div class="filaCamposDoble">
               <div class="grupoCampo">
-                <label for="campoTelefono" class="etiquetaCampo">Teléfono o WhatsApp <span class="marcaRequerido">*</span></label>
-                <input
-                  type="tel"
-                  id="campoTelefono"
-                  name="telefonoCliente"
-                  class="entradaFormulario"
-                  placeholder="Ej. 55 1234 5678"
-                  autocomplete="tel"
-                  required
-                >
+                <label for="campoTelefono" class="etiquetaCampo">Teléfono o WhatsApp <span
+                    class="marcaRequerido">*</span></label>
+                <input type="tel" id="campoTelefono" name="telefonoCliente" class="entradaFormulario"
+                  placeholder="Ej. 55 1234 5678" autocomplete="tel" required>
                 <span id="errorTelefono" class="mensajeErrorCampo" role="alert"></span>
               </div>
 
               <div class="grupoCampo">
-                <label for="campoCorreo" class="etiquetaCampo">Correo electrónico <span class="marcaRequerido">*</span></label>
-                <input
-                  type="email"
-                  id="campoCorreo"
-                  name="correoCliente"
-                  class="entradaFormulario"
-                  placeholder="ejemplo@correo.com"
-                  autocomplete="email"
-                  required
-                >
+                <label for="campoCorreo" class="etiquetaCampo">Correo corporativo o personal <span
+                    class="marcaRequerido">*</span></label>
+                <input type="email" id="campoCorreo" name="correoCliente" class="entradaFormulario"
+                  placeholder="ejemplo@empresa.com" autocomplete="email" required>
                 <span id="errorCorreo" class="mensajeErrorCampo" role="alert"></span>
               </div>
             </div>
 
             <div class="grupoCampo">
-              <label for="campoServicio" class="etiquetaCampo">¿Qué solución te interesa? <span class="marcaRequerido">*</span></label>
-              <select id="campoServicio" name="servicioSeleccionado" class="entradaFormulario selectorFormulario" required>
+              <label for="campoServicio" class="etiquetaCampo">¿Qué solución o consultoría te interesa? <span
+                  class="marcaRequerido">*</span></label>
+              <select id="campoServicio" name="servicioSeleccionado" class="entradaFormulario selectorFormulario"
+                required>
                 <option value="">Selecciona una opción...</option>
                 <option value="Punto de Venta (POS)">Punto de Venta (POS) - Cobro y control de caja</option>
-                <option value="Landing Pages y Páginas Web">Landing Page o Sitio Web para atraer clientes</option>
-                <option value="Dashboards y Paneles">Dashboard o Panel de Control con gráficas</option>
-                <option value="CRM a la Medida">CRM a la Medida - Control y seguimiento de clientes</option>
-                <option value="Desarrollos con Inteligencia Artificial">Desarrollo con Inteligencia Artificial (IA)</option>
-                <option value="Software 100% a la Medida">Software o Sistema 100% a la medida</option>
-                <option value="Seguridad y Cámaras">Seguridad y Cámaras (ver desde el celular)</option>
-                <option value="Soporte y Mantenimiento">Soporte y Mantenimiento de computadoras</option>
-                <option value="Redes e Internet">Redes e Internet Wi-Fi sin fallas</option>
-                <option value="Proyecto Integral / Varios">Proyecto Integral / Varios servicios combinados</option>
+                <option value="Landing Pages y Páginas Web">Landing Page o Sitio Web de alta conversión</option>
+                <option value="Dashboards y Paneles">Dashboard Ejecutivo / Business Intelligence</option>
+                <option value="CRM a la Medida">CRM a la Medida - Embudo y retención de clientes</option>
+                <option value="Desarrollos con Inteligencia Artificial">Solución e Integración con Inteligencia
+                  Artificial</option>
+                <option value="Software 100% a la Medida">Software y Arquitectura a la Medida</option>
+                <option value="Seguridad y Cámaras">Seguridad Corporativa y Cámaras de Vigilancia</option>
+                <option value="Soporte y Mantenimiento">Soporte y Mantenimiento de Infraestructura</option>
+                <option value="Redes e Internet">Redes Empresariales y Conectividad Estable</option>
+                <option value="Proyecto Integral / Varios">Consultoría Integral / Múltiples soluciones</option>
               </select>
               <span id="errorServicio" class="mensajeErrorCampo" role="alert"></span>
             </div>
 
             <div class="grupoCampo">
-              <label for="campoMensaje" class="etiquetaCampo">¿Qué te gustaría que haga tu sistema o qué necesitas resolver? <span class="marcaRequerido">*</span></label>
-              <textarea
-                id="campoMensaje"
-                name="mensajeCliente"
-                rows="4"
-                class="entradaFormulario areaTextoFormulario"
-                placeholder="Ejemplo: Necesito un punto de venta para mi tienda de ropa con lector de código y ticket, o un chatbot con IA para responder en WhatsApp..."
-                required
-              ></textarea>
+              <label for="campoMensaje" class="etiquetaCampo">Cuéntanos sobre tu proyecto u objetivo de negocio <span
+                  class="marcaRequerido">*</span></label>
+              <textarea id="campoMensaje" name="mensajeCliente" rows="4" class="entradaFormulario areaTextoFormulario"
+                placeholder="Describe tus requerimientos, número de usuarios o el reto tecnológico a resolver..."
+                required></textarea>
               <span id="errorMensaje" class="mensajeErrorCampo" role="alert"></span>
             </div>
 
             <button type="submit" id="botonEnviar" class="botonPrimario botonAnchoCompleto botonGrande">
               <span>Enviar mi Solicitud</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
               </svg>
@@ -804,7 +937,8 @@
             <div id="alertaExitoFormulario" class="alertaExito" role="status" aria-live="polite" hidden>
               <div class="encabezadoAlertaExito">
                 <div class="circuloExitoVerde">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                 </div>
@@ -821,15 +955,12 @@
   </main>
 
   <!-- Botón flotante de WhatsApp para contacto rápido -->
-  <a
-    href="https://wa.me/525512345678?text=Hola,%20quisiera%20cotizar%20un%20proyecto%20con%20Codia"
-    class="botonFlotanteWhatsapp"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp directamente"
-  >
+  <a href="https://wa.me/525512345678?text=Hola,%20quisiera%20cotizar%20un%20proyecto%20con%20Romsan%20R%26S%20Consulting"
+    class="botonFlotanteWhatsapp" target="_blank" rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp directamente con Romsan R&S Consulting">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.29-1.93 1.37-.51.08-1.18.11-3.37-.77-2.61-1.05-4.29-3.7-4.42-3.87-.13-.17-1.05-1.39-1.05-2.65s.66-1.88.89-2.14c.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.38-.06.59.45.23.54.77 1.88.84 2.02.07.14.12.31.02.49-.09.18-.14.29-.27.46-.14.16-.29.36-.42.48-.14.14-.29.29-.12.58.17.28.74 1.22 1.6 1.98 1.1 1 2.04 1.31 2.33 1.45.29.15.46.13.63-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.31.15.51.22.59.35.07.13.07.75-.17 1.43z"/>
+      <path
+        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.68-1.4 1.29-1.93 1.37-.51.08-1.18.11-3.37-.77-2.61-1.05-4.29-3.7-4.42-3.87-.13-.17-1.05-1.39-1.05-2.65s.66-1.88.89-2.14c.24-.26.52-.33.7-.33.17 0 .35.01.5.02.16.01.38-.06.59.45.23.54.77 1.88.84 2.02.07.14.12.31.02.49-.09.18-.14.29-.27.46-.14.16-.29.36-.42.48-.14.14-.29.29-.12.58.17.28.74 1.22 1.6 1.98 1.1 1 2.04 1.31 2.33 1.45.29.15.46.13.63-.07.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.31.15.51.22.59.35.07.13.07.75-.17 1.43z" />
     </svg>
     <span class="globoTooltipWhatsapp">¿Hablamos por WhatsApp?</span>
   </a>
@@ -840,18 +971,20 @@
       <div class="columnaMarcaPie">
         <a href="#inicio" class="marcaLogotipo marcaLogotipoPie">
           <div class="iconoLogotipo iconoLogotipoPie" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <polyline points="16 18 22 12 16 6"></polyline>
               <polyline points="8 6 2 12 8 18"></polyline>
             </svg>
           </div>
           <div class="bloqueMarcaTexto">
-            <span class="textoLogotipo">Codia</span>
-            <span class="subtextoLogotipo">Tech &amp; IA Solutions</span>
+            <span class="textoLogotipo">Rom<span class="letraRojo">S</span>an</span>
+            <span class="subtextoLogotipo"><span class="nodoRojo">R&amp;S</span> CONSULTING</span>
           </div>
         </a>
         <p class="descripcionPie">
-          Desarrollamos soluciones digitales a la medida: Puntos de Venta, CRM, Dashboards, Asistentes de Inteligencia Artificial y Seguridad para impulsar tu negocio de forma sencilla.
+          Romsan R&amp;S Consulting: Soluciones tecnológicas de vanguardia, software empresarial a la medida,
+          automatización con Inteligencia Artificial y seguridad para el crecimiento de tu organización.
         </p>
       </div>
 
@@ -867,12 +1000,12 @@
       </div>
 
       <div class="columnaEnlacesPie">
-        <h4 class="tituloColumnaPie">Servicios y Soporte</h4>
+        <h4 class="tituloColumnaPie">Servicios y Consultoría</h4>
         <ul class="listaPie">
           <li><a href="#soluciones" class="enlacePie">Seguridad y Cámaras</a></li>
           <li><a href="#soluciones" class="enlacePie">Soporte y Computadoras</a></li>
           <li><a href="#soluciones" class="enlacePie">Redes e Internet Wi-Fi</a></li>
-          <li><a href="#por-que-codia" class="enlacePie">Cómo trabajamos</a></li>
+          <li><a href="#por-que-romsan" class="enlacePie">Cómo trabajamos</a></li>
           <li><a href="#preguntas" class="enlacePie">Preguntas Frecuentes</a></li>
         </ul>
       </div>
@@ -880,19 +1013,22 @@
       <div class="columnaEnlacesPie">
         <h4 class="tituloColumnaPie">Contacto directo</h4>
         <ul class="listaPie">
-          <li>WhatsApp: <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" class="enlacePie">+52 (55) 1234 5678</a></li>
-          <li>Email: <a href="mailto:contacto@codia.mx" class="enlacePie">contacto@codia.mx</a></li>
-          <li>Atención en sitio y remota</li>
-          <li>Garantía directa en cada desarrollo</li>
+          <li>WhatsApp: <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer"
+              class="enlacePie">+52 (55) 1234 5678</a></li>
+          <li>Email: <a href="mailto:contacto@romsan.com" class="enlacePie">contacto@romsan.com</a></li>
+          <li>Consultoría presencial y remota</li>
+          <li>Garantía directa en cada entrega</li>
         </ul>
       </div>
     </div>
 
     <div class="contenedorPrincipal barraDerechosAutor">
-      <p>&copy; <span id="anioActual">2026</span> Codia Soluciones Tecnológicas. Desarrollos con IA, Software a la Medida y Seguridad.</p>
+      <p>&copy; <span id="anioActual">2026</span> Romsan R&amp;S Consulting. Consultoría Tecnológica, Inteligencia
+        Artificial y Software a la Medida.</p>
     </div>
   </footer>
 
   <script src="app.js"></script>
 </body>
+
 </html>
